@@ -35,7 +35,7 @@ const content = {
 			content: [
 				{
 					type: 'text',
-					content: `Start your journey of trailblazing in Nuuksio National Park from the starting point of Haukkalampi. Haukanpesä Guide Hut has multiple services for offer: rent a rowing boat for the lake, enjoy traditional snacks and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
+					content: `Start here your hiking journey to Nuuksio National Park. Haukkalampi is great starting point with Haukanpesä Guide Hut which has multiple services to offer: rent a rowing boat for the lake, enjoy traditional snacks from Cafe Silva or get a guided tour. Rent the equipment if you want to explore Nuuksio either by foot, bike or paddling.`,
 				},
 				{
 					type: 'stats_weekly',
@@ -56,8 +56,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Starting your journey from the area is recommended if you prefer social and supportive environment to make sure that you have all the needed information and supplies. There you can find a cafe, guidance and equiptment renting. 
-						  You can also buy for example outdoor maps and sleeve badges. The personnel will help you if you have some questions about the national park.`,
+					content: `Start the hike here if you prefer social and supportive environment to make sure that you have all the needed information and supplies. The personnel will help you if you have some questions about the national park.`,
 				},
 				{
 					type: 'stats_monthly',
@@ -97,7 +96,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `All the circle trails begin in front of the Nature Information Hut Haukanpesä. On the grounds there are dry toilets, a recycling point and tap water available.`,
+					content: `All the circle trails begin in front of the Nature Information Hut Haukanpesä. On the grounds there are dry toilets, a recycling point and tap water available which is purest in the world and safe to drink.`,
 				},
 				{
 					type: 'html',
@@ -106,7 +105,7 @@ const content = {
 				{
 					type: 'text',
 					content: `Within easy reach from Helsinki you can escape into wild natural settings and enjoy Finnish scenery at its best, with lakes, green forests and rigged crags. 
-					Pack your backpack for a memorable family picnic or campout. The nearby Finnish Nature Centre Haltia spotlights the best of Finland's natural treasures.`,
+					Pack your backpack for a memorable family picnic or campout. The nearby Finnish Nature Centre Haltia spotlights the best of Finland's natural treasures what you may find interesting.`,
 				}
 			]
 		},
@@ -140,7 +139,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beautifulness of the finnish nature with convenient way.`,
+					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beauty of the finnish nature.`,
 				},
 				{
 					type: 'stats_monthly',
@@ -170,7 +169,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Solvalla national sports institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.`,
+					content: `Solvalla National Sports Institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.`,
 				},
 				{
 					type: 'html',
@@ -221,7 +220,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Starting your hiking from Veikkola also provides you a good opportunity to head towards Kirkkonummi which isn't actually that far away. The area has described to summarize the nature of Finland with it's mossy paths, duckboards, rocky and wild nature. `,
+					content: `Start your trailblazing from Veikkola if you are interested heading towards Kirkkonummi which isn't actually that far away. The area has described to summarize the nature of Finland with it's mossy paths, duckboards, rocky and wild nature. `,
 				},
 				{
 					type: 'stats_monthly',
@@ -251,7 +250,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The cultural heritage of Kirkkonummi, which is over 675 years old, is represented in the medieval stone church, the local history museums, the lush manor surroundings and the sights in the terrain on the Porkkala peninsula that date back to the period when it was leased to the Soviet Union in 1944–1956.  `,
+					content: `The cultural heritage of Kirkkonummi, which is over 675 years old, is represented in the medieval stone church, the local history museums, the lush manor surroundings and the sights in the terrain on the Porkkala peninsula that date back to the period when it was leased to the Soviet Union in 1944–1956. To get a historical punch as part of the trip you can make pitstop to Kirkkonummi to learn more about this.   `,
 				},
 				{
 					type: 'html',
@@ -302,7 +301,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Everybody may enjoy canoeing independently. Kesänki provides exceptional opportunity during Summer times to enjoy the beauty of the wilderness with exceptional way. Lake Kesänki is connected to lake Äkäslompolo with a small and peaceful river Kesänki. During the day you may canoe from lake Kesänki to lake Äkäslompolo and finish your canoeing there.`,
+					content: `Everybody may enjoy canoeing independently and Kesänki provides during the Summer season exceptional opportunity to rent one. Kesänki provides Enjoy the beauty of the wilderness with exceptional way. Lake Kesänki is connected to lake Äkäslompolo with a small and peaceful river Kesänki. During the day you may canoe from lake Kesänki to lake Äkäslompolo and finish your canoeing there.`,
 				},
 				{
 					type: 'stats_monthly',
@@ -332,7 +331,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Go by skiing, walking or biking from Äkäslompolo or Ylläsjärvi. At the winter time you can walk here without snow shoes, but by biking we recommend fatbike. Easiest way to find us is to buy "Ylläs - winter sport map". We are located at the Kesänkijärvi, only 2 km from parking area (Adress: Sahatie). From Äkäslompolo village just follow the signs to Kesänkijärvi. `,
+					content: `Go by skiing, walking or biking from Äkäslompolo or Ylläsjärvi. At the winter time you can walk to the lake of Kesänkijärvi without snow shoes, but by biking we recommend fatbike. Easiest way to find it is to buy "Ylläs - winter sport map". From Äkäslompolo village just follow the signs to Kesänkijärvi. `,
 				},
 				{
 					type: 'html',
@@ -361,7 +360,7 @@ const content = {
 			content: [
 				{
 					type: 'text',
-					content: `Lean-to shelter is in Finnish Laavu which has been for us a source of inspiration of building the tool for wanderers. It is a minimalistic structure to provide hikers after a long hike a resting place and shelter to get more energy for upcoming adventures. Kahvikeidas is small heartwarming cafeteria from a local lifestyle entrepreneur that gives you the power to continue your journey on your trails.`,
+					content: `Lean-to shelter is in Finnish Laavu which has been a source of inspiration for the team behind the software to build a tool for social and environmentally responsible wanderers. It is a minimalistic structure to provide hikers after a long hike a resting place and shelter to get more energy for upcoming adventures. Kahvikeidas is small heartwarming cafeteria inside Laavu from a local lifestyle entrepreneur that gives you the power to continue your journey on your trails.`,
 				},
 				{
 					type: 'stats_weekly',
@@ -412,7 +411,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Saalistusjotos trail is all about the struggle between the prey and the hunter and the ways in which the creation has adapted to the survival situation. this trail shows the nature of northeast Lapland at its most beautiful. The signposts on the trail acquaint you with the fauna, geology and cultural history of the area.`,
+					content: `Saalistusjotos trail is all about the struggle between the prey and the hunter and the ways in which the creation has adapted to the survival situation. This trail shows the nature of northeast Lapland at its most beautiful. The signposts on the trail acquaint you with the fauna, geology and cultural history of the area.`,
 				},
 				{
 					type: 'html',
@@ -428,7 +427,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `In a few years Kahvikeidas will get it's second wilderness cafeteria which provides for the winter season more possibilities to recharge your batteries to continue your journey.`,
+					content: `In a few years Kahvikeidas will get it's second wilderness cafeteria which provides for the winter season more possibilities to recharge your batteries even better to keep you continuing your journey.`,
 				}
 			]
 		},
