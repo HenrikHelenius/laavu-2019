@@ -55,6 +55,10 @@ const content = {
 					}
 				},
 				{
+					latitude: `60°18'32.378"`,
+					longitude: `24°30'48.658"`,
+				},
+				{
 					type: 'text',
 					content: `Start the hike here if you prefer social and supportive environment to make sure that you have all the needed information and supplies. The personnel will help you if you have some questions about the national park.`,
 				},
@@ -138,6 +142,10 @@ const content = {
 					}
 				},
 				{
+					latitude: `60°18'12.692"`,
+					longitude: `24°33'1.408"`,
+				},
+				{
 					type: 'text',
 					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beauty of the finnish nature.`,
 				},
@@ -219,6 +227,10 @@ const content = {
 					}
 				},
 				{
+					latitude: `60°16'32.951"`,
+					longitude: `24°27'49.281"`,
+				},
+				{
 					type: 'text',
 					content: `Start your trailblazing from Veikkola if you are interested heading towards Kirkkonummi which isn't actually that far away. The area has described to summarize the nature of Finland with it's mossy paths, duckboards, rocky and wild nature. `,
 				},
@@ -286,18 +298,22 @@ const content = {
 					type: 'stats_weekly',
 					content: {
 						visitors: [
-							4157,
-							3906,
-							3886,
-							3482,
-							3927,
-							2982,
-							3589
+							17733,
+							18187,
+							15879,
+							18550,
+							20288,
+							15814,
+							16359
 						],
 						xAxis: [
 							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
 						]
 					}
+				},
+				{
+					latitude: `67°36'13.363"`,
+					longitude: `24°13'13.884"`,
 				},
 				{
 					type: 'text',
@@ -307,18 +323,18 @@ const content = {
 					type: 'stats_monthly',
 					content: {
 						visitors: [
-							1131,
-							2760,
-							5919,
-							4048,
-							501,
-							1258,
-							2364,
-							1830,
-							4379,
-							541,
-							120,
-							1078
+							6017,
+							6924,
+							14957,
+							9616,
+							2753,
+							7659,
+							12980,
+							12162,
+							32162,
+							8675,
+							2563,
+							6342
 						],
 						xAxis: [
 							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -378,6 +394,10 @@ const content = {
 							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
 						]
 					}
+				},
+				{
+					latitude: `67°33'40.616"`,
+					longitude: `24°16'36.985"`,
 				},
 				{
 					type: 'text',
@@ -458,6 +478,10 @@ const content = {
 							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
 						]
 					}
+				},
+				{
+					latitude: `67°35'54.594"`,
+					longitude: `24°12'17.89"`,
 				},
 				{
 					type: 'text',
