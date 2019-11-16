@@ -16,6 +16,14 @@ class GenericAreaChart extends React.Component {
 				chart: {
 					toolbar: {
 						show: false
+					},
+					animateGradually: {
+						enabled: true,
+						delay: 200
+					},
+					dynamicAnimation: {
+						enabled: true,
+						speed: 350
 					}
 					// foreColor: '#fd686c' // label texts
 				},

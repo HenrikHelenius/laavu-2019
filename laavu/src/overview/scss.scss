@@ -1,6 +1,6 @@
 @import '../variables';
 
-.container > * {
+.container > *:not(.no-bottom-margin) {
 	margin-bottom: $spacer;
 }
 
@@ -9,22 +9,9 @@
 	overflow: hidden;
 
 	.carousel-caption {
-		bottom: 10px;
+		top: 50%;
 		transform: translateY(-50%);
-	}
-}
-
-.horisontal-scroll {
-	$height: 20rem;
-	height: $height !important;
-
-	.horisontal-scroll-card {
-		width: 18rem;
-		height: $height;
-
-		&:not(:last-of-type) {
-			margin-right: $spacer;
-		}
+		bottom: initial;
 	}
 }
 
@@ -45,8 +32,4 @@
 	.text {
 		font-size: 2rem;
 	}
-}
-
-.scroll-horizontal {
-	overflow: visible !important;
 }

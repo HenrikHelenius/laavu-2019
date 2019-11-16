@@ -1,9 +1,9 @@
 import React from 'react';
 import './scss.scss';
 // Components
-import HorizontalScroll from 'react-scroll-horizontal'
-import {withRouter, Link} from "react-router-dom";
-import {Container, Row, Col, Card, Jumbotron, Button, Carousel} from 'react-bootstrap'
+import HorisontalSlider from "../horisontal-slider/js";
+import {Link} from "react-router-dom";
+import {Container, Row, Col, Jumbotron, Button, Carousel} from 'react-bootstrap'
 
 import content from '../content'
 
@@ -12,11 +12,6 @@ class Overview extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
-		this.routeChange = this.routeChange.bind(this);
-	}
-
-	routeChange(path) {
-		this.props.history.push(path);
 	}
 
 	componentDidMount() {}
@@ -42,7 +37,6 @@ class Overview extends React.Component {
 									<Carousel.Caption>
 										<h3 className="picture-text-shadow">{item.name}</h3>
 										<p className="picture-text-shadow">{item.description}</p>
-										<Button variant="secondary" as={Link} to={`${item.path}`}>Read more</Button>
 									</Carousel.Caption>
 								</Carousel.Item>
 							)
@@ -60,33 +54,10 @@ class Overview extends React.Component {
 						<Button variant='primary'>Lorem todo ipsum</Button>
 					</p>
 				</Jumbotron>
-				<Row>
+				<Row className="no-bottom-margin">
 					<Col>
 						<h3 style={{marginBottom: '1rem'}}>Starting points for your adventure</h3>
-						<HorizontalScroll
-							pageLock={true}
-							reverseScroll={true}
-							className='horisontal-scroll'
-						>
-							{
-								content.locations.map((item, idx) => {
-									return (
-										<Card className='horisontal-scroll-card' key={idx} onClick={ () => this.routeChange(`/location:${item.id}`)}>
-											<Card.Img variant="top" src={item.image}/>
-											<Card.Body>
-												<Card.Title>{item.name}</Card.Title>
-												<Card.Subtitle className="mb-2 text-muted">
-													{item.subtitle}
-												</Card.Subtitle>
-												<Card.Text>
-													{item.description}
-												</Card.Text>
-											</Card.Body>
-										</Card>
-									)
-								})
-							}
-						</HorizontalScroll>
+						<HorisontalSlider items={content.locations}></HorisontalSlider>
 					</Col>
 				</Row>
 				<Row>
@@ -99,4 +70,4 @@ class Overview extends React.Component {
 	}
 }
 
-export default withRouter(Overview);
+export default Overview;
