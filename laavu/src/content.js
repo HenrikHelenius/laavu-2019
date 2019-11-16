@@ -353,29 +353,27 @@ const content = {
 			]
 		},
 		{
-			id: 'kellokas_luontokeskus',
-			name: 'Kellokas',
+			id: 'varkaankuru',
+			name: 'Varkaankuru',
 			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
 			subtitle: 'Bla bla tags',
-			description: `Traditional lean-to shelter to satisfy your appetite`,
+			description: `Authentic nature trail in the heart of Ylläs`,
 			content: [
 				{
 					type: 'text',
-					content: `Kellokas Centre in Yllästunturi is the nature window of all visitors in Ylläs. The centre provides information on Pallas-Yllästunturi National Park, Finland's oldest hiking trail, and on accommodation, events, vibrant fell villages, and other popular features of the fell area. 
-						  Restaurant Halla is on your service. ellokas Visitor Centre in Yllästunturi is the lounge, event centre, and nature window of all visitors in Ylläs. The centre provides information on Pallas-Yllästunturi National Park, Finland's oldest hiking trail, and on accommodation, events, vibrant fell villages, and other popular features of the fell area. 
-						  It is the starting point of many exceptionally beautiful hiking trails. `,
+					content: `If there were to be a ”Finland’s Most Beautiful Nature Trail” competition, one of the medals would have to be awarded in advance: the landscapes and nature of this nature trail on Varkaankuru Ravine are uniquely rich in variety. On Wizard’s Trail, natural phenomena and the world of superstitions go hand in hand. Because of its duckboards and steps, the trail is not physically demanding. Along the way, near the top of Varkaankuru Ravine, you will find a designated campfire spot. `,
 				},
 				{
 					type: 'stats_weekly',
 					content: {
 						visitors: [
-							71480,
-							56819,
-							75496,
-							58917,
-							54745,
-							76330,
-							64271
+							21646,
+							21272,
+							14933,
+							19746,
+							23025,
+							26080,
+							24315
 						],
 						xAxis: [
 							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
@@ -384,24 +382,24 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Kellokas Visitor Centre at Äkäslompolo in Kolari was expanded into a nature and cultural centre in 2008. The development of the area's culture has always been tied to the area's natural environment and the possibilities it provides. This relantionship between nature and culture is the main theme of Kellokas Visitor Centre's new exhibition. The goals of the exhibition are to bring new insight to how dependant people are on nature and for visitors to apply what they learn to their everyday lives.`,
+					content: `With a bit of imagination the practically ancient spruce trees seem like a group of wizards holding a meeting. In the midst of the murky and dense spruce forest the Downy Birch (Betula pubescens), the European Mountain-Ash (Sorbus aucuparia) and the Goat Willow (Salix caprea) bring a lighter vibe to the woods.`,
 				},
 				{
 					type: 'stats_monthly',
 					content: {
 						visitors: [
-							25717,
-							44046,
-							63601,
-							36953,
-							14862,
-							35396,
-							50961,
-							40370,
-							83264,
-							17854,
-							18280,
-							26754
+							685,
+							1785,
+							3769,
+							2344,
+							2195,
+							14480,
+							28160,
+							22611,
+							55870,
+							14453,
+							2792,
+							1873
 						],
 						xAxis: [
 							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -414,7 +412,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The visitor centre's expansion and new exhibition was the result of international cooperation. The new exhibits at Kellokas tell the story of the villages on the fells in Pallas-Yllästunturi National Park, the rivers which have their source in these fells, the natural features and culture in the Tornio-Muoniojoki area and about the River Väylä the river of life, around which local people have built their lives. The River Väylä has been a travel route, the vein that connects the entire area that has helped the area's diverse culture develop into something extraordinary. The richness of the area's culture can best be seen from the lively, colourful Meän-language spoken on both sides of the river. Today the language is very expressive and it is held in great respect and there is a good deal of support to keep it alive.`,
+					content: `Metsähallitus has stated that "The herb-rich forest is so lush it seems like something out of a fairytale".`,
 				},
 				{
 					type: 'html',
@@ -422,7 +420,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The Helsinki based architect firm Kari Kuosma handled the overall design of the exhibition's architecture and graphics. The design and layout for the cultural part of the exhibition was arranged by FM Darja Heikkilä, the script for the nature portion was written by FM Juha Paso and the graphics and illustrations for the nature portion was the work of artist TaM Venla Väisänen. The exhibition's AV-presentations were designed and executed by DocArt Production Ky and Rapid River Ky. The entire venture was coordinated by Maarit Kyöstilä.`,
+					content: ` The Varkaankuru Nature Trail is usually in a good condition, and it is clearly marked with signposting. The area has its own micro climate, and is rich in flora and fauna. You can spot many, even rare species of plants, polyporaceae- and birds (eg. Angelica archangelica, Haploporus odorus and grey wagtail). Therefore, the area is in all respects a fascinating place to hike.`,
 				},
 				{
 					type: 'html',
@@ -430,10 +428,10 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The nature and cultural exhibition venture was headed by the Fell-Lapland park area at Metsähallitus, Parks & Wildlife Finland. The cost of the project was about 400,000 Euros. The funding came from the European Union's European Regional Development Fund's Northern program, the Province of Lapland, the Lapland Regional Environment Centre, the municipality of Kolari, the municipality of Pajala, the Ministry of the Environment and Metsähallitus.`,
+					content: `The trail also has Varkaanlampi Falls what is a series of four consecutive waterfalls in the Pallas-Yllästunturi National Park in Kolari. They are located in the herb-rich forest of the Varkaankuru Ravine, between the fells Ylläs and Kellostapuli. The falls flow near the small Varkaanlampi Pond in the southern end of the ravine.`,
 				}
 			]
-		}
+		},
 	],
 	experiences: [
 		{
