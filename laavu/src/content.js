@@ -26,7 +26,7 @@ const content = {
 			content: [
 				{
 					type: 'text',
-					content: `Haukkalampi basecamps of starting journey of trailblazing in Nuuksio National Park. Haukanpesä Guide Hut has multiple services for offer: rent a rowing boat for the lake, enjoy traditional snack and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
+					content: `Start your journey of trailblazing in Nuuksio National Park from the starting point of Haukkalampi. Haukanpesä Guide Hut has multiple services for offer: rent a rowing boat for the lake, enjoy traditional snack and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
 				},
 				{
 					type: 'stats_weekly',
