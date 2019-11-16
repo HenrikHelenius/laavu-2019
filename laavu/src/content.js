@@ -115,7 +115,7 @@ const content = {
 			name: 'Solvalla',
 			image: 'https://source.unsplash.com/collection/561941/400x200?dsgsafx',
 			subtitle: 'Bla bla tags',
-			description: `Bla bla`,
+			description: `Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio national park.`,
 			content: [
 				{
 					type: 'text',
@@ -140,7 +140,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beautifulness of the finnish nature with most convenient way.`,
+					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beautifulness of the finnish nature with convenient way.`,
 				},
 				{
 					type: 'stats_monthly',
@@ -169,8 +169,8 @@ const content = {
 					content: `https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80`,
 				},
 				{
-					type: 'Solvalla national sports institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.',
-					content: `null`,
+					type: 'text',
+					content: `Solvalla national sports institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.`,
 				},
 				{
 					type: 'html',
@@ -192,16 +192,89 @@ const content = {
 			]
 		},
 		{
-			id: 'pollas',
-			name: 'Pölläs',
+			id: 'veikkola',
+			name: 'Veikkola',
 			image: 'https://source.unsplash.com/collection/561941/400x200?xfdssdf',
 			subtitle: 'Bla bla tags',
-			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
-			content: {}
+			description: `Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio national park.`,
+			content: [
+				{
+					type: 'text',
+					content: `Veikkola-Salmi connecting Trail (20 km) will lead you from Veikkola via Siikajärvi and Haukkalampi all the way to Salmi hiking area. You can choose the details of the trail yourself. You will also have an opportunity and start your journey over here to test the famous Trail 2000, 110 km long hiking trail. The trail goes through the national park and are suits for sports enthuasists that are looking for multi-day challenge. It is also suitable for biking.`,
+				},
+				{
+					type: 'stats_weekly',
+					content: {
+						visitors: [
+							8946,
+							11684,
+							14052,
+							13696,
+							11353,
+							9764,
+							8880
+						],
+						xAxis: [
+							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+						]
+					}
+				},
+				{
+					type: 'text',
+					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beautifulness of the finnish nature with convenient way.`,
+				},
+				{
+					type: 'stats_monthly',
+					content: {
+						visitors: [
+							5205,
+							3245,
+							6163,
+							6383,
+							7357,
+							7396,
+							7553,
+							7664,
+							7110,
+							7036,
+							5533,
+							7730
+						],
+						xAxis: [
+							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+						]
+					}
+				},
+				{
+					type: 'image',
+					content: `https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80`,
+				},
+				{
+					type: 'text',
+					content: `Solvalla national sports institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/opD8Uq62v5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+				},
+				{
+					type: 'text',
+					content: `Solvalla Sports Institute have five saunas of various sizes. Our two lakeside saunas, can hold 6 persons respective 15 persons. By the lakeside saunas there is a small beach where you can cool down in between your sauna sessions. Additionally, there are two Saunas in the main building and one attached to the accommodation in the Rinne building.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t5nfrxZLK8xrpOclwcqLwFEiNHk4-3nW" width="640" height="480"></iframe>`
+				},
+				{
+					type: 'text',
+					content: `Within easy reach from Helsinki you can escape into wild natural settings and enjoy Finnish scenery at its best, with lakes, green forests and rigged crags. 
+					Pack your backpack for a memorable family picnic or campout. Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio National Park. The nearby Finnish Nature Centre Haltia spotlights the best of Finland's natural treasures.`,
+				}
+			]
 		},
 		{
-			id: 'helsinki',
-			name: 'Helsinki',
+			id: 'takalanpolku',
+			name: 'Takalanpolku',
 			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
 			subtitle: 'Bla bla tags',
 			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
