@@ -38,8 +38,6 @@ class Location extends React.Component {
 	}
 
 	render() {
-		let blockContent = ``;
-
 		return (
 			<Container className="location-component">
 				<div style={{backgroundImage: `url(${this.state.item.image})`}} className="hero">
@@ -54,7 +52,6 @@ class Location extends React.Component {
 						<Button variant="primary">Add to plans</Button>
 					</Col>
 				</Row>
-
 				{
 					this.state.item.content.map(
 						(block, idx) => {

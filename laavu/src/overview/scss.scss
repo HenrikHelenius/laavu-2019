@@ -12,6 +12,14 @@
 		top: 50%;
 		transform: translateY(-50%);
 		bottom: initial;
+
+		h3 {
+			font-weight: 700;
+		}
+
+		.btn {
+			margin-bottom: 1rem;
+		}
 	}
 }
 
@@ -20,6 +28,18 @@
 	align-items: center;
 	justify-content: center;
 	margin: 2rem 1rem 2.5rem 1rem;
+
+	$laavu-svg: '../imgs/laavu-svg.svg';
+	.laavu-png {
+		display: block;
+		width: 100%;
+		height: 3rem;
+		margin: 1rem 0;
+		background-image: url($laavu-svg);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 
 	.icon {
 		@include visit-finland-background();

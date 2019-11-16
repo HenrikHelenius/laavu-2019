@@ -13,8 +13,9 @@ class Root extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			key: 'overview'
+			requestedActiveKey: window.location.pathname.replace('/', '')
 		};
+		console.log(this.state)
 	}
 
 	componentDidMount() {
@@ -39,7 +40,7 @@ class Root extends React.Component {
 					<Nav
 						fill
 						variant="tabs"
-						defaultActiveKey="overview"
+						defaultActiveKey={this.state.requestedActiveKey}
 						className="tab-bottom-navigation"
 					>
 						<Nav.Item>
@@ -48,12 +49,12 @@ class Root extends React.Component {
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link as={Link} to="/" eventKey="overview">
+							<Nav.Link as={Link} to="/" eventKey="">
 								<div className="icon-home"></div>
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link as={Link} to="/profile" eventKey="profiles">
+							<Nav.Link as={Link} to="/profile" eventKey="profile">
 								Profile
 							</Nav.Link>
 						</Nav.Item>

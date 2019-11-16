@@ -14,15 +14,18 @@ class Overview extends React.Component {
 		this.state = {};
 	}
 
-	componentDidMount() {}
+	componentDidMount() {
+	}
+
+	// <div className="icon"></div>
+	// <div className="text">Laavu</div>
 
 	render() {
 		return (
 			<Container>
 				<header>
 					<div className="logo-laavu">
-						<div className="icon"></div>
-						<div className="text">Laavu</div>
+						<div className="laavu-png"></div>
 					</div>
 				</header>
 				<Carousel>
@@ -36,7 +39,6 @@ class Overview extends React.Component {
 									/>
 									<Carousel.Caption>
 										<h3 className="picture-text-shadow">{item.name}</h3>
-										<p className="picture-text-shadow">{item.description}</p>
 									</Carousel.Caption>
 								</Carousel.Item>
 							)

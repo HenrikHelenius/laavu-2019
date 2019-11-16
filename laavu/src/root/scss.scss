@@ -26,9 +26,13 @@ $tab-margin: 0.3rem;
 	}
 }
 
-.nav-link.active {
-	color: $palette-accent-orange !important;
-	background: whitesmoke !important;
+.nav-link {
+	font-weight: 600;
+
+	&.active {
+		color: $palette-accent-orange !important;
+		background: linear-gradient(190deg, white 0%, rgba($palette-accent-yellow, 0.2)) !important;
+	}
 }
 
 .icon-home {

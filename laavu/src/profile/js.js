@@ -1,22 +1,132 @@
 import React from 'react';
 import './scss.scss';
-import {Container} from "react-bootstrap";
+import {Container, Jumbotron, Button, ProgressBar, Row, Col, Badge} from "react-bootstrap";
+import Switch from "react-switch";
 
 class Profile extends React.Component {
+	ls_settings_id = 'laavu_settings';
 
 	constructor(props) {
 		super(props);
-		this.state = {
+		this.state = this.loadSettingsStateLS() || {
+			greenpoints: 43,
+			badges: 75,
+			isSocialToggle: true,
+			isTentingToggle: false,
 		};
+		this.handleSocialChange = this.handleSocialChange.bind(this);
+		this.handleTentingChange = this.handleTentingChange.bind(this);
+	}
+
+	saveSettingsStateLS() {
+		const ls = window.localStorage;
+		ls.setItem(this.ls_settings_id, JSON.stringify(this.state));
+	}
+
+	loadSettingsStateLS() {
+		const raw = localStorage.getItem(this.ls_settings_id);
+		if (!raw) return null; // don't set state, defaults will kick in
+		const json = JSON.parse(raw);
+		return json
+	}
+
+	handleSocialChange(checked) {
+		this.setState({
+			isSocialToggle: checked
+		});
+		this.saveSettingsStateLS()
+	}
+
+
+	handleTentingChange(checked) {
+		this.setState({
+			isTentingToggle: checked
+		});
+		this.saveSettingsStateLS()
+	}
+
+	increaseGreenpoints() {
+		this.setState({greenpoints: this.state.greenpoints+1});
+		this.saveSettingsStateLS()
 	}
 
 	componentDidMount() {
 	}
 
 	render() {
+
 		return (
 			<Container>
-				<h2>Profile view</h2>
+				<Jumbotron>
+					<h3>Aaro Isosaari</h3>
+					<h6>
+						<Badge pill variant="light" className="mr-2 badge-box-shadow">Public profile</Badge>
+						<Badge pill variant="secondary" className="badge-box-shadow">Contributor</Badge>
+					</h6>
+					<p>
+						Public profile info: This is a simple hero unit, a simple jumbotron-style component for calling
+						extra attention to featured content or information.
+					</p>
+					<div style={{textAlign: "center"}}>
+						<div style={{display: "inline-block"}} className="profile-picture"></div>
+						<div className="mb-2 mt-2">
+							<a href="http://www.facebook.com/sharer.php?u=https://laavu.co&p[title]=Liity+Laavu:un+by+Visit+Finland">
+								<Button variant="light" className="badge-box-shadow">Share on Facebook</Button>
+							</a>
+						</div>
+						<div>
+							<a href="mailto:friend@example.fi&Subject: Join Laavu">
+								<Button variant="primary">Invite a friend by email</Button>
+							</a>
+						</div>
+					</div>
+				</Jumbotron>
+				<div className="settings">
+					<Row>
+						<Col>
+							<p>I prefer being <span>{this.state.isSocialToggle ? 'social' : 'in solitude'}</span>.</p>
+							<Switch onChange={this.handleSocialChange} checked={this.state.isSocialToggle} />
+						</Col>
+						<Col>
+							<p>I prefer <span>{this.state.isTentingToggle ? 'tenting' : 'living in cabins'}</span>.</p>
+							<Switch onChange={this.handleTentingChange} checked={this.state.isTentingToggle} />
+						</Col>
+					</Row>
+				</div>
+				<div className="sustainability">
+					<h5>Our Nature: <Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h5>
+					<ProgressBar onClick={() => this.increaseGreenpoints()} className="green" now={this.state.greenpoints} label={`${this.state.greenpoints}%`} />
+					<br/>
+					<h6>Sustainable Finland pledge</h6>
+					<p>
+						Nature has taken care of us for millions of years and now it’s time for us to take care of it in return. By taking the Sustainable Finland Pledge you make a promise to respect and treasure the Finnish nature, its inhabitants and culture during your visit.
+					</p>
+					<a href="https://www.visitfinland.com/sustainable-finland-pledge/" target="_blank">
+						<Button>Pledge now</Button>
+					</a>
+				</div>
+				<Jumbotron>
+					<div className="badges">
+						<h5>Sustainable travelling badges:</h5>
+						<ProgressBar now={this.state.badges} label={`${this.state.badges}%`} />
+						<Row className="mt-4 mb-6">
+							<Col>
+								<span className="vf-badge helsinki"></span>
+							</Col>
+							<Col>
+								<div className="vf-badge lakeland"></div>
+							</Col>
+						</Row>
+						<Row className="mt-4">
+							<Col>
+								<div className="vf-badge lapland locked"></div>
+							</Col>
+							<Col>
+								<div className="vf-badge archipelago"></div>
+							</Col>
+						</Row>
+					</div>
+				</Jumbotron>
 			</Container>
 		);
 	}

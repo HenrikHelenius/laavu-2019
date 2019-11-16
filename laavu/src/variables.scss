@@ -2,11 +2,12 @@ $spacer: 2rem;
 $border-radius: .3rem;
 
 $palette-accent-blue: #31ccfd;
+$palette-accent-blue: #31ccfd;
 $palette-accent-orange: #fd686c;
 $palette-accent-yellow: #ff864f;
 $palette-body: #333;
 
-$visit-finland-logo: 'https://www.visitfinland.com/app/themes/visitfinland-3-wordpress-theme/assets/images/visitfinland.png';
+$visit-finland-logo: './imgs/visitfinland-logo.png';
 
 @mixin visit-finland-background() {
 	background-image: url($visit-finland-logo);

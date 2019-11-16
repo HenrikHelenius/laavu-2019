@@ -41,7 +41,7 @@
 		}
 
 		&:not(:last-of-type) {
-			margin-right: $spacer;
+			margin-right: $spacer / 2;
 		}
 	}
 
