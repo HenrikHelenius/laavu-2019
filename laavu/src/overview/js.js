@@ -2,12 +2,24 @@ import React from 'react';
 import './scss.scss';
 // Components
 import HorisontalSlider from "../horisontal-slider/js";
-import {Link} from "react-router-dom";
 import {Container, Row, Col, Jumbotron, Button, Carousel} from 'react-bootstrap'
 
 import content from '../content'
 
 class Overview extends React.Component {
+
+	experiencesMarketing = [
+		{
+			name: 'Something unforgettable is just behind the corner',
+			image: 'https://source.unsplash.com/nzmPi4d5cvc/500x300',
+			description: `First choose the location for your trip by clicking on Add to .`
+		},
+		{
+			name: 'You could be kayaking in Finland...',
+			image: 'https://source.unsplash.com/ym3vp_TeDLE/500x300',
+			description: `But first ... add your first location and see all available experiences on "My trip" tab.`,
+		}
+	];
 
 	constructor(props) {
 		super(props);
@@ -28,12 +40,13 @@ class Overview extends React.Component {
 						<div className="laavu-png"></div>
 					</div>
 				</header>
-				<Carousel>
+				<Carousel style={{height: "205"}} controls={false}>
 					{
 						content.carousel.map((item, idx) => {
 							return (
 								<Carousel.Item key={idx}>
 									<img
+										style={{height: "205", backgroundColor: "whitesmoke"}}
 										className="d-block w-100"
 										src={item.image}
 									/>
@@ -46,25 +59,28 @@ class Overview extends React.Component {
 					}
 				</Carousel>
 				<Jumbotron>
-					<h2>Laavu</h2>
+					<h2>Nature · Laavu</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
 						labore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
 						omnis possimus quae. TODO
 					</p>
 					<p>
-						<Button variant='primary'>Lorem todo ipsum</Button>
+						<a href="#locations">
+							<Button variant='primary'>Lorem todo ipsum</Button>
+						</a>
 					</p>
 				</Jumbotron>
-				<Row className="no-bottom-margin">
+				<Row className="no-bottom-margin" id="locations">
 					<Col>
 						<h3 style={{marginBottom: '1rem'}}>Starting points for your adventure</h3>
 						<HorisontalSlider items={content.locations}></HorisontalSlider>
 					</Col>
 				</Row>
-				<Row>
+				<Row className="no-bottom-margin">
 					<Col>
-						<h3>Experiences</h3>
+						<h3 style={{marginBottom: '1rem'}}>Experiences</h3>
+						<HorisontalSlider items={this.experiencesMarketing} noLink={true} noSubtitle={true}></HorisontalSlider>
 					</Col>
 				</Row>
 			</Container>

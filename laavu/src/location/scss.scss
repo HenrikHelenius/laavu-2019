@@ -1,7 +1,6 @@
 @import '../variables';
 
 .location-component {
-
 	.hero {
 		display: flex;
 		justify-content: center;
@@ -9,7 +8,7 @@
 		height: 15rem;
 		width: 100%;
 		margin-top: $spacer;
-		background: linear-gradient(40deg, whitesmoke 20%, lightgray 10%);
+		background-image: whitesmoke;
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -20,16 +19,6 @@
 
 	.chart {
 		width: 100%;
-	}
-
-	iframe {
-		width: 100%;
-		border: none;
-		outline: none;
-
-		&[src*="google.com/maps"] {
-			pointer-events: none;
-		}
 	}
 
 	img {

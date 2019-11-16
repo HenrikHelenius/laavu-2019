@@ -15,7 +15,6 @@ class Root extends React.Component {
 		this.state = {
 			requestedActiveKey: window.location.pathname.replace('/', '')
 		};
-		console.log(this.state)
 	}
 
 	componentDidMount() {
@@ -45,7 +44,7 @@ class Root extends React.Component {
 					>
 						<Nav.Item>
 							<Nav.Link as={Link} to="/trips" eventKey="trips">
-								Trips
+								My trip
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
@@ -55,7 +54,7 @@ class Root extends React.Component {
 						</Nav.Item>
 						<Nav.Item>
 							<Nav.Link as={Link} to="/profile" eventKey="profile">
-								Profile
+								My profile
 							</Nav.Link>
 						</Nav.Item>
 					</Nav>

@@ -3,12 +3,14 @@ import './scss.scss';
 import {Container, Jumbotron, Button, ProgressBar, Row, Col, Badge} from "react-bootstrap";
 import Switch from "react-switch";
 
-class Profile extends React.Component {
-	ls_settings_id = 'laavu_settings';
+import constants from '../constants'
+import localSto from '../localstorage'
 
+class Profile extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = this.loadSettingsStateLS() || {
+		const loaded = localSto.loadState(constants.ls_settings_id);
+		this.state = loaded || {
 			greenpoints: 43,
 			badges: 75,
 			isSocialToggle: true,
@@ -18,23 +20,11 @@ class Profile extends React.Component {
 		this.handleTentingChange = this.handleTentingChange.bind(this);
 	}
 
-	saveSettingsStateLS() {
-		const ls = window.localStorage;
-		ls.setItem(this.ls_settings_id, JSON.stringify(this.state));
-	}
-
-	loadSettingsStateLS() {
-		const raw = localStorage.getItem(this.ls_settings_id);
-		if (!raw) return null; // don't set state, defaults will kick in
-		const json = JSON.parse(raw);
-		return json
-	}
-
 	handleSocialChange(checked) {
 		this.setState({
 			isSocialToggle: checked
 		});
-		this.saveSettingsStateLS()
+		localSto.saveState(constants.ls_settings_id, this.state)
 	}
 
 
@@ -42,19 +32,19 @@ class Profile extends React.Component {
 		this.setState({
 			isTentingToggle: checked
 		});
-		this.saveSettingsStateLS()
+		localSto.saveState(constants.ls_settings_id, this.state)
 	}
 
 	increaseGreenpoints() {
 		this.setState({greenpoints: this.state.greenpoints+1});
-		this.saveSettingsStateLS()
+		localSto.saveState(constants.ls_settings_id, this.state)
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 	}
 
 	render() {
-
 		return (
 			<Container>
 				<Jumbotron>
@@ -95,7 +85,13 @@ class Profile extends React.Component {
 				</div>
 				<div className="sustainability">
 					<h5>Our Nature: <Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h5>
-					<ProgressBar onClick={() => this.increaseGreenpoints()} className="green" now={this.state.greenpoints} label={`${this.state.greenpoints}%`} />
+					<ProgressBar
+						onClick={() => this.increaseGreenpoints()}
+						className="green"
+						now={this.state.greenpoints}
+						label={`${this.state.greenpoints}%`}
+						style={{marginTop: "1rem"}}
+					/>
 					<br/>
 					<h6>Sustainable Finland pledge</h6>
 					<p>

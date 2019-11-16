@@ -28,10 +28,11 @@ $tab-margin: 0.3rem;
 
 .nav-link {
 	font-weight: 600;
+	transition: color ease-in .2s, -webkit-filter ease-in .2s;
 
 	&.active {
 		color: $palette-accent-orange !important;
-		background: linear-gradient(190deg, white 0%, rgba($palette-accent-yellow, 0.2)) !important;
+		//background: linear-gradient(190deg, white 0%, rgba($palette-accent-yellow, 0.2)) !important;
 	}
 }
 
@@ -47,15 +48,13 @@ $tab-margin: 0.3rem;
 	}
 }
 
-.nav-item {
-	margin: 0 $tab-margin;
+iframe {
+	width: 100%;
+	border: none;
+	outline: none;
 
-	&:first-of-type {
-		margin-right: 0;
-	}
-
-	&:last-of-type {
-		margin-left: 0;
+	&[src*="google.com/maps"] {
+		//pointer-events: none;
 	}
 }
 

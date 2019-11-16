@@ -5,6 +5,8 @@ import content from '../content'
 import BackButton from "../backbutton";
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import GenericAreaChart from "../generic-area-chart/js";
+import localSto from "../localstorage";
+import constants from "../constants";
 
 class Location extends React.Component {
 	constructor(props) {
@@ -48,8 +50,8 @@ class Location extends React.Component {
 						<BackButton />
 					</Col>
 					<Col style={{textAlign: 'right'}}>
-						<Button variant="light" style={{marginRight: '1rem'}}>Directions</Button>
-						<Button variant="primary">Add to plans</Button>
+						<Button variant="light" style={{marginBottom: '0.5rem'}}>Directions</Button>
+						<Button variant="primary" style={{marginLeft: '1rem'}} onClick={() => {localSto.saveState(constants.ls_trips_id, this.state.item); this.props.history.push('/trips')}}>Add to plans</Button>
 					</Col>
 				</Row>
 				{

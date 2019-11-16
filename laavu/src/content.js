@@ -116,7 +116,7 @@ const content = {
 		{
 			id: 'solvalla',
 			name: 'Solvalla',
-			image: 'https://source.unsplash.com/collection/561941/400x200?dsgsafx',
+			image: 'https://source.unsplash.com/qzgN45hseN0/1600x900',
 			subtitle: 'Bla bla tags',
 			description: `Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio national park.`,
 			content: [

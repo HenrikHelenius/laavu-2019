@@ -1,7 +1,17 @@
 @import '../variables';
 
+.container {
+	scroll-behavior: smooth;
+}
+
 .container > *:not(.no-bottom-margin) {
 	margin-bottom: $spacer;
+}
+
+.carousel, .slide, .carousel-inner, .carousel-inner img {
+	background-color: whitesmoke;
+	min-height: 205px;
+	width: 100%;
 }
 
 .carousel {
@@ -52,4 +62,8 @@
 	.text {
 		font-size: 2rem;
 	}
+}
+
+.grayscale {
+	-webkit-filter: grayscale(1);
 }

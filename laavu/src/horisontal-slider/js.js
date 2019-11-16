@@ -3,10 +3,19 @@ import './scss.scss';
 import {withRouter, Link} from "react-router-dom";
 import {Card, Button} from "react-bootstrap";
 
+import constants from '../constants'
+import localSto from '../localstorage'
+
 class HorisontalSlider extends React.Component {
+
+	noLink = false;
+	noSubtitle = false;
 
 	constructor(props) {
 		super(props);
+		this.noLink = props.noLink ? props.noLink : false ;
+		this.noSubtitle = props.noSubtitle ? props.noSubtitle : false;
+
 		this.state = {
 			items: props.items,
 			isDown: false,
@@ -24,7 +33,7 @@ class HorisontalSlider extends React.Component {
 	}
 
 	routeChange(path) {
-	   this.props.history.push(path);
+		this.props.history.push(path);
 	}
 
 	handleMouseDown(e) {
@@ -53,6 +62,37 @@ class HorisontalSlider extends React.Component {
 		this.state.sliderClassName = '';
 	}
 
+	addToTrip(item) {
+		console.log('add to trip', item);
+		localSto.saveState(constants.ls_trips_id, item)
+	}
+
+	genericCard(item, idx, noLink, noSubtitle) {
+		return (
+			<Card className='horisontal-scroll-card item' key={idx}
+			      onClick={() => !noLink && this.routeChange(`/location:${item.id}`)}>
+				<Card.Img variant="top" src={item.image}/>
+				<Card.Body>
+					<Card.Title>{item.name}</Card.Title>
+					{
+						!noSubtitle &&
+						<Card.Subtitle className="mb-2 text-muted">
+							{item.subtitle}
+						</Card.Subtitle>
+					}
+					<Card.Text>
+						{item.description}
+					</Card.Text>
+					{
+						!noLink &&
+						<Button variant="primary" as={Link} to={`/location:${item.id}`}>Explore</Button>
+						&& <Button variant="primary" onClick={() => this.addToTrip(item)}>Add to Trip</Button>
+					}
+				</Card.Body>
+			</Card>
+		)
+	}
+
 	render() {
 		return (
 			<div
@@ -64,21 +104,7 @@ class HorisontalSlider extends React.Component {
 			>
 				{
 					this.state.items.map((item, idx) => {
-						return (
-							<Card className='horisontal-scroll-card item' key={idx} onClick={ () => this.routeChange(`/location:${item.id}`)}>
-								<Card.Img variant="top" src={item.image}/>
-								<Card.Body>
-									<Card.Title>{item.name}</Card.Title>
-									<Card.Subtitle className="mb-2 text-muted">
-										{item.subtitle}
-									</Card.Subtitle>
-									<Card.Text>
-										{item.description}
-									</Card.Text>
-									<Button variant="primary" as={Link} to={`/location:${item.id}`}>Explore</Button>
-								</Card.Body>
-							</Card>
-						)
+						return this.genericCard(item, idx, this.noLink, this.noSubtitle)
 					})
 				}
 			</div>
