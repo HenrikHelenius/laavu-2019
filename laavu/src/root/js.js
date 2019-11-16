@@ -43,13 +43,13 @@ class Root extends React.Component {
 						className="tab-bottom-navigation"
 					>
 						<Nav.Item>
-							<Nav.Link as={Link} to="/" eventKey="overview">
-								<div className="icon-home"></div>
+							<Nav.Link as={Link} to="/trips" eventKey="trips">
+								Trips
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link as={Link} to="/trips" eventKey="trips">
-								Trips
+							<Nav.Link as={Link} to="/" eventKey="overview">
+								<div className="icon-home"></div>
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>

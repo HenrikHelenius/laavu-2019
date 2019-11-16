@@ -28,6 +28,7 @@ a:not(.btn) {
 
 .btn-primary {
   background-color: $palette-accent-orange !important;
+  background: linear-gradient(200deg, $palette-accent-orange, $palette-accent-yellow 90%);
   border-color: $palette-accent-orange !important;
 
   &:focus {
