@@ -26,9 +26,8 @@ const content = {
 			content: [
 				{
 					type: 'text',
-					content: `sdffsdfs Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-\t\t\t\t\t\tlabore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-\t\t\t\t\t\tomnis possimus quae.`,
+					content: `Begin your journey of wandering of one Finland's nationak parks Nuuksio. 
+						  Haukkalampi is a basecamp of trailblazing with multiple services: rent a rowing boat for the lake, enjoy traditional snack and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
 				},
 				{
 					type: 'stats_weekly',
