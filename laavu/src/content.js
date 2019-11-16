@@ -273,6 +273,86 @@ const content = {
 			]
 		},
 		{
+			id: 'kesanki',
+			name: 'Kesänki',
+			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
+			subtitle: 'Bla bla tags',
+			description: `Far away from traffic, total silence and amazing nature around you!`,
+			content: [
+				{
+					type: 'text',
+					content: `Fill your bottle with water from a spring in Lake Kesänkijärvi. Walk up the path to the old pine trees. Sit and take a break on a fallen dead tree near the forest border. Climb up Pirunkuru Ravine. From rock to rock. Step by step. Lean to the mass of rocks on the top. Breathtaking scenery. Restlessness is long gone. Time stands still. A raven flies by, breaks the spell and guides you to the Tahkokuru lean-to shelter. The flames dance in the campfire. On the way back, your step is light. A trip to Kesänkitunturi fell is a classic.`,
+				},
+				{
+					type: 'stats_weekly',
+					content: {
+						visitors: [
+							4157,
+							3906,
+							3886,
+							3482,
+							3927,
+							2982,
+							3589
+						],
+						xAxis: [
+							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+						]
+					}
+				},
+				{
+					type: 'text',
+					content: `Everybody may enjoy canoeing independently. Kesänki provides exceptional opportunity during Summer times to enjoy the beauty of the wilderness with exceptional way. Lake Kesänki is connected to lake Äkäslompolo with a small and peaceful river Kesänki. During the day you may canoe from lake Kesänki to lake Äkäslompolo and finish your canoeing there.`,
+				},
+				{
+					type: 'stats_monthly',
+					content: {
+						visitors: [
+							1131,
+							2760,
+							5919,
+							4048,
+							501,
+							1258,
+							2364,
+							1830,
+							4379,
+							541,
+							120,
+							1078
+						],
+						xAxis: [
+							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+						]
+					}
+				},
+				{
+					type: 'image',
+					content: `https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80`,
+				},
+				{
+					type: 'text',
+					content: `Go by skiing, walking or biking from Äkäslompolo or Ylläsjärvi. At the winter time you can walk here without snow shoes, but by biking we recommend fatbike. Easiest way to find us is to buy "Ylläs - winter sport map". We are located at the Kesänkijärvi, only 2 km from parking area (Adress: Sahatie). From Äkäslompolo village just follow the signs to Kesänkijärvi. `,
+				},
+				{
+					type: 'html',
+					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/opD8Uq62v5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+				},
+				{
+					type: 'text',
+					content: `Enjoy a spectacular view right next to the fell Ylläs. Lake Kesänki provides exceptional view to the silent Ylläs fell and the Lappish wilderness. Keep a break by the fireplace to grill sausages, eat local specialities and enjoy hot drinks. On the way back go down along the deepest canyon in Ylläs, Pirunkuru.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t5nfrxZLK8xrpOclwcqLwFEiNHk4-3nW" width="640" height="480"></iframe>`
+				},
+				{
+					type: 'text',
+					content: `The trail named Tähtipolku (Finn. Star Trail), climbs Kesänki Fell through Pirunkuru Ravine. This is both exhausting and breathtaking beautiful path for the wanderers who want to enjoy the purest nature of Lapland.`,
+				}
+			]
+		},
+		{
 			id: 'kahvikeidas',
 			name: 'Kahvikeidas',
 			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
