@@ -21,7 +21,20 @@ code {
   text-overflow: ellipsis;
 }
 
-a {
+a:not(.btn) {
   cursor: pointer;
   color: $palette-body !important;
+}
+
+.btn-primary {
+  background-color: $palette-accent-orange !important;
+  border-color: $palette-accent-orange !important;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($palette-accent-orange,.5) !important;
+  }
+}
+
+.btn-link {
+  color: $palette-accent-orange !important;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './scss.scss';
 // Components
 import HorizontalScroll from 'react-scroll-horizontal'
-import {withRouter} from "react-router-dom";
+import {withRouter, Link} from "react-router-dom";
 import {Container, Row, Col, Card, Jumbotron, Button, Carousel} from 'react-bootstrap'
 
 import content from '../content'
@@ -38,11 +38,11 @@ class Overview extends React.Component {
 									<img
 										className="d-block w-100"
 										src={item.image}
-										alt={item.name}
 									/>
 									<Carousel.Caption>
-										<h3>{item.name}</h3>
-										<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										<h3 className="picture-text-shadow">{item.name}</h3>
+										<p className="picture-text-shadow">{item.description}</p>
+										<Button variant="secondary" as={Link} to={`${item.path}`}>Read more</Button>
 									</Carousel.Caption>
 								</Carousel.Item>
 							)
@@ -54,18 +54,18 @@ class Overview extends React.Component {
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
 						labore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-						omnis possimus quae.
+						omnis possimus quae. TODO
 					</p>
 					<p>
-						<Button variant='primary'>Lorem ipsum</Button>
+						<Button variant='primary'>Lorem todo ipsum</Button>
 					</p>
 				</Jumbotron>
 				<Row>
 					<Col>
-						<h3>Starting points for your adventure</h3>
+						<h3 style={{marginBottom: '1rem'}}>Starting points for your adventure</h3>
 						<HorizontalScroll
 							pageLock={true}
-							reverseScroll={false}
+							reverseScroll={true}
 							className='horisontal-scroll'
 						>
 							{
@@ -75,10 +75,11 @@ class Overview extends React.Component {
 											<Card.Img variant="top" src={item.image}/>
 											<Card.Body>
 												<Card.Title>{item.name}</Card.Title>
-												<Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+												<Card.Subtitle className="mb-2 text-muted">
+													{item.subtitle}
+												</Card.Subtitle>
 												<Card.Text>
-													Some quick example text to build on the card title and make up the bulk of
-													the card's content.
+													{item.description}
 												</Card.Text>
 											</Card.Body>
 										</Card>
@@ -91,29 +92,6 @@ class Overview extends React.Component {
 				<Row>
 					<Col>
 						<h3>Experiences</h3>
-						<HorizontalScroll
-							pageLock={true}
-							reverseScroll={false}
-							className='horisontal-scroll'
-						>
-							{
-								content.experiences.map((item, idx) => {
-									return (
-										<Card className='horisontal-scroll-card' key={idx} onClick={ () => this.routeChange(`/experience:${item.id}`)}>
-											<Card.Img variant="top" src={item.image}/>
-											<Card.Body>
-												<Card.Title>{item.name}</Card.Title>
-												<Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-												<Card.Text>
-													Some quick example text to build on the card title and make up the bulk of
-													the card's content.
-												</Card.Text>
-											</Card.Body>
-										</Card>
-									)
-								})
-							}
-						</HorizontalScroll>
 					</Col>
 				</Row>
 			</Container>

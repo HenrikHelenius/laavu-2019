@@ -2,17 +2,14 @@ import React from 'react';
 import { withRouter } from "react-router";
 import './scss.scss';
 import content from '../content'
-import {Container, Row, Col, Card} from 'react-bootstrap'
+import BackButton from "../backbutton";
+import {Container, Row, Col, Button} from 'react-bootstrap'
 import GenericAreaChart from "../generic-area-chart/js";
 
 class Location extends React.Component {
 	constructor(props) {
 		const id = props.match.params.id.replace(':', '');
-		console.log("id", {id: id});
-		console.log(content.locations);
 		const item = content.locations.filter(item => item.id === id)[0];
-		console.log('item', item);
-
 		super(props);
 		this.state = {
 			item: item
@@ -46,13 +43,22 @@ class Location extends React.Component {
 		return (
 			<Container className="location-component">
 				<div style={{backgroundImage: `url(${this.state.item.image})`}} className="hero">
-					<h2>{this.state.item.name}</h2>
+					<h2 className="picture-text-shadow">{this.state.item.name}</h2>
 				</div>
+				<Row>
+					<Col>
+						<BackButton />
+					</Col>
+					<Col style={{textAlign: 'right'}}>
+						<Button variant="light" style={{marginRight: '1rem'}}>Directions</Button>
+						<Button variant="primary">Add to plans</Button>
+					</Col>
+				</Row>
 
 				{
 					this.state.item.content.map(
-						block => {
-							return this.evaluateBlock(block);
+						(block, idx) => {
+							return <div key={idx}>{this.evaluateBlock(block)}</div>
 						}
 					)
 				}

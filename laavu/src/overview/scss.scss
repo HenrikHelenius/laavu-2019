@@ -7,6 +7,11 @@
 .carousel {
 	border-radius: $border-radius;
 	overflow: hidden;
+
+	.carousel-caption {
+		bottom: 10px;
+		transform: translateY(-50%);
+	}
 }
 
 .horisontal-scroll {

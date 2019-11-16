@@ -3,18 +3,26 @@ const content = {
 		{
 			name: 'Visit X',
 			image: 'https://source.unsplash.com/collection/561941/400x200?xssdf',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
+			path: ''
 		},
 		{
 			name: 'Experience Y',
-			image: 'https://source.unsplash.com/collection/561941/400x200?xsfdf'
+			image: 'https://source.unsplash.com/collection/561941/400x200?xsfdf',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
+			path: ''
 		},
 		{
 			name: 'Explore Z',
-			image: 'https://source.unsplash.com/collection/561941/400x200?sasx'
+			image: 'https://source.unsplash.com/collection/561941/400x200?sasx',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
+			path: ''
 		},
 		{
 			name: 'Fall in love with Ö',
-			image: 'https://source.unsplash.com/collection/561941/400x200?fshhdx'
+			image: 'https://source.unsplash.com/collection/561941/400x200?fshhdx',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
+			path: ''
 		},
 	],
 	locations: [
@@ -22,6 +30,7 @@ const content = {
 			id: 'haukkalampi',
 			name: 'Haukkalampi',
 			image: 'https://source.unsplash.com/collection/561941/1200x600?aax',
+			subtitle: 'Bla bla tags',
 			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
 			content: [
 				{
@@ -105,7 +114,8 @@ const content = {
 			id: 'solvalla',
 			name: 'Solvalla',
 			image: 'https://source.unsplash.com/collection/561941/400x200?dsgsafx',
-			description: `null`,
+			subtitle: 'Bla bla tags',
+			description: `Bla bla`,
 			content: [
 				{
 					type: 'text',
@@ -184,12 +194,18 @@ const content = {
 		{
 			id: 'pollas',
 			name: 'Pölläs',
-			image: 'https://source.unsplash.com/collection/561941/400x200?xfdssdf'
+			image: 'https://source.unsplash.com/collection/561941/400x200?xfdssdf',
+			subtitle: 'Bla bla tags',
+			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
+			content: {}
 		},
 		{
 			id: 'helsinki',
 			name: 'Helsinki',
-			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx'
+			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
+			subtitle: 'Bla bla tags',
+			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
+			content: {}
 		},
 	],
 	experiences: [
