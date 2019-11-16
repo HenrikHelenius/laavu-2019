@@ -196,7 +196,7 @@ const content = {
 			name: 'Veikkola',
 			image: 'https://source.unsplash.com/collection/561941/400x200?xfdssdf',
 			subtitle: 'Bla bla tags',
-			description: `The finnish landscape in miniature.`,
+			description: `Explore the finnish landscape in miniature size..`,
 			content: [
 				{
 					type: 'text',
@@ -273,13 +273,167 @@ const content = {
 			]
 		},
 		{
-			id: 'takalanpolku',
-			name: 'Takalanpolku',
+			id: 'kahvikeidas',
+			name: 'Kahvikeidas',
 			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
 			subtitle: 'Bla bla tags',
-			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
-			content: {}
+			description: `Traditional lean-to shelter to satisfy your appetite`,
+			content: [
+				{
+					type: 'text',
+					content: `Lean-to shelter is in Finnish Laavu which has been for us a source of inspiration of building the tool for wanderers. It is a minimalistic structure to provide hikers after a long hike a resting place and shelter to get more energy for upcoming adventures. Kahvikeidas is small heartwarming cafeteria from a local lifestyle entrepreneur that gives you the power to continue your journey on your trails.`,
+				},
+				{
+					type: 'stats_weekly',
+					content: {
+						visitors: [
+							37451,
+							35895,
+							34337,
+							37041,
+							36713,
+							35979,
+							38689
+						],
+						xAxis: [
+							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+						]
+					}
+				},
+				{
+					type: 'text',
+					content: `Kahvikeidas is part of known Saalistusjotos trail which has get high interest among global and domestic travelers. It is most likely that you will meet other wanderers while going the path. Greet them warmly and take most out of the interactions.`,
+				},
+				{
+					type: 'stats_monthly',
+					content: {
+						visitors: [
+							12721,
+							30666,
+							85220,
+							64535,
+							2880,
+							2844,
+							5192,
+							5599,
+							15276,
+							3983,
+							3041,
+							24148
+						],
+						xAxis: [
+							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+						]
+					}
+				},
+				{
+					type: 'image',
+					content: `https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80`,
+				},
+				{
+					type: 'text',
+					content: `Saalistusjotos trail is all about the struggle between the prey and the hunter and the ways in which the creation has adapted to the survival situation. this trail shows the nature of northeast Lapland at its most beautiful. The signposts on the trail acquaint you with the fauna, geology and cultural history of the area.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/opD8Uq62v5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+				},
+				{
+					type: 'text',
+					content: `The trail is good for beginners, families or the ones that want to try Fatbike in the forest for the first time. The trail takes you from the fields towards the top of the fells. There may be a risk that some day the nature will limit the trailblazers for using the path wind that gusts at speeds of up to 15 m/s. However, the trail is known for its good condition during every season of the year.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t5nfrxZLK8xrpOclwcqLwFEiNHk4-3nW" width="640" height="480"></iframe>`
+				},
+				{
+					type: 'text',
+					content: `In a few years Kahvikeidas will get it's second wilderness cafeteria which provides for the winter season more possibilities to recharge your batteries to continue your journey.`,
+				}
+			]
 		},
+		{
+			id: 'kellokas_luontokeskus',
+			name: 'Kellokas',
+			image: 'https://source.unsplash.com/collection/561941/400x200?sdsdffx',
+			subtitle: 'Bla bla tags',
+			description: `Traditional lean-to shelter to satisfy your appetite`,
+			content: [
+				{
+					type: 'text',
+					content: `Kellokas Centre in Yllästunturi is the nature window of all visitors in Ylläs. The centre provides information on Pallas-Yllästunturi National Park, Finland's oldest hiking trail, and on accommodation, events, vibrant fell villages, and other popular features of the fell area. 
+						  Restaurant Halla is on your service. ellokas Visitor Centre in Yllästunturi is the lounge, event centre, and nature window of all visitors in Ylläs. The centre provides information on Pallas-Yllästunturi National Park, Finland's oldest hiking trail, and on accommodation, events, vibrant fell villages, and other popular features of the fell area. 
+						  It is the starting point of many exceptionally beautiful hiking trails. `,
+				},
+				{
+					type: 'stats_weekly',
+					content: {
+						visitors: [
+							71480,
+							56819,
+							75496,
+							58917,
+							54745,
+							76330,
+							64271
+						],
+						xAxis: [
+							"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+						]
+					}
+				},
+				{
+					type: 'text',
+					content: `Kellokas Visitor Centre at Äkäslompolo in Kolari was expanded into a nature and cultural centre in 2008. The development of the area's culture has always been tied to the area's natural environment and the possibilities it provides. This relantionship between nature and culture is the main theme of Kellokas Visitor Centre's new exhibition. The goals of the exhibition are to bring new insight to how dependant people are on nature and for visitors to apply what they learn to their everyday lives.`,
+				},
+				{
+					type: 'stats_monthly',
+					content: {
+						visitors: [
+							25717,
+							44046,
+							63601,
+							36953,
+							14862,
+							35396,
+							50961,
+							40370,
+							83264,
+							17854,
+							18280,
+							26754
+						],
+						xAxis: [
+							"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+						]
+					}
+				},
+				{
+					type: 'image',
+					content: `https://images.unsplash.com/photo-1486945007940-bebc06d5f289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80`,
+				},
+				{
+					type: 'text',
+					content: `The visitor centre's expansion and new exhibition was the result of international cooperation. The new exhibits at Kellokas tell the story of the villages on the fells in Pallas-Yllästunturi National Park, the rivers which have their source in these fells, the natural features and culture in the Tornio-Muoniojoki area and about the River Väylä the river of life, around which local people have built their lives. The River Väylä has been a travel route, the vein that connects the entire area that has helped the area's diverse culture develop into something extraordinary. The richness of the area's culture can best be seen from the lively, colourful Meän-language spoken on both sides of the river. Today the language is very expressive and it is held in great respect and there is a good deal of support to keep it alive.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/opD8Uq62v5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+				},
+				{
+					type: 'text',
+					content: `The Helsinki based architect firm Kari Kuosma handled the overall design of the exhibition's architecture and graphics. The design and layout for the cultural part of the exhibition was arranged by FM Darja Heikkilä, the script for the nature portion was written by FM Juha Paso and the graphics and illustrations for the nature portion was the work of artist TaM Venla Väisänen. The exhibition's AV-presentations were designed and executed by DocArt Production Ky and Rapid River Ky. The entire venture was coordinated by Maarit Kyöstilä.`,
+				},
+				{
+					type: 'html',
+					content: `<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t5nfrxZLK8xrpOclwcqLwFEiNHk4-3nW" width="640" height="480"></iframe>`
+				},
+				{
+					type: 'text',
+					content: `The nature and cultural exhibition venture was headed by the Fell-Lapland park area at Metsähallitus, Parks & Wildlife Finland. The cost of the project was about 400,000 Euros. The funding came from the European Union's European Regional Development Fund's Northern program, the Province of Lapland, the Lapland Regional Environment Centre, the municipality of Kolari, the municipality of Pajala, the Ministry of the Environment and Metsähallitus.`,
+				}
+			]
+		}
 	],
 	experiences: [
 		{
