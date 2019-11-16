@@ -93,7 +93,7 @@ const content = {
 				},
 				{
 					type: 'html',
-					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/opD8Uq62v5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+					content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/51paAlx3La4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 				},
 				{
 					type: 'text',
