@@ -196,7 +196,7 @@ const content = {
 			name: 'Veikkola',
 			image: 'https://source.unsplash.com/collection/561941/400x200?xfdssdf',
 			subtitle: 'Bla bla tags',
-			description: `Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio national park.`,
+			description: `The finnish landscape in miniature.`,
 			content: [
 				{
 					type: 'text',
@@ -221,7 +221,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `The trail between Solvalla and Haukkalampi is one of the busiest paths of Nuuksio because of the services what Solvella provides in its area. If you're looking for a light 4.6 km hiking path this might be the solution for you to provide you a possibility to enjoy the beautifulness of the finnish nature with convenient way.`,
+					content: `Starting your hiking from Veikkola also provides you a good opportunity to head towards Kirkkonummi which isn't actually that far away. The area has described to summarize the nature of Finland with it's mossy paths, duckboards, rocky and wild nature. `,
 				},
 				{
 					type: 'stats_monthly',
@@ -251,7 +251,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Solvalla national sports institution provides activities for each season of the year. Solvalla Sports Institute offers a wide range of sport activities, from aerobics to trekking. In the summer there is a possibility to hire canoes and rowing boats. Swing Hill, a downhill skiing centre, and the Finnish Nature Centre Haltia are located nearby the institute. There are also meeting facilities, accommodation and two lakeside saunas.`,
+					content: `The cultural heritage of Kirkkonummi, which is over 675 years old, is represented in the medieval stone church, the local history museums, the lush manor surroundings and the sights in the terrain on the Porkkala peninsula that date back to the period when it was leased to the Soviet Union in 1944–1956.  `,
 				},
 				{
 					type: 'html',
@@ -259,7 +259,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Solvalla Sports Institute have five saunas of various sizes. Our two lakeside saunas, can hold 6 persons respective 15 persons. By the lakeside saunas there is a small beach where you can cool down in between your sauna sessions. Additionally, there are two Saunas in the main building and one attached to the accommodation in the Rinne building.`,
+					content: `The literal meaning of the words "Kirkkonummi" and "Kyrkslätt" in English is "church heath". Geographically, Kirkkonummi has two famous peninsulas, namely Porkkala and Upinniemi, the latter one of which houses a major Finnish naval base. Kirkkonummi has been populated from the Stone Age to the present day as evidenced by the very first Stone Age rock paintings found in Finland that are located by lake Vitträsk in the central lake region of Kirkkonummi. `,
 				},
 				{
 					type: 'html',
@@ -267,7 +267,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Within easy reach from Helsinki you can escape into wild natural settings and enjoy Finnish scenery at its best, with lakes, green forests and rigged crags. 
+					content: `Within easy reach from Helsinki you can escape into nature of Finland and enjoy the scenery at its beauty.  Around 200 000 lakes, 40 national forests and rigged crags. 
 					Pack your backpack for a memorable family picnic or campout. Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio National Park. The nearby Finnish Nature Centre Haltia spotlights the best of Finland's natural treasures.`,
 				}
 			]
