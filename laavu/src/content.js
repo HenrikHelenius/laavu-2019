@@ -26,8 +26,7 @@ const content = {
 			content: [
 				{
 					type: 'text',
-					content: `Begin your journey of wandering of one Finland's nationak parks Nuuksio. 
-						  Haukkalampi is a basecamp of trailblazing with multiple services: rent a rowing boat for the lake, enjoy traditional snack and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
+					content: `Haukkalampi basecamps of starting journey of trailblazing in Nuuksio National Park. Haukanpesä Guide Hut has multiple services for offer: rent a rowing boat for the lake, enjoy traditional snack and products from Cafe Silva or get a guided tour. You can decide if you want to explore Nuuksio either by foot, bike or paddling.`,
 				},
 				{
 					type: 'stats_weekly',
@@ -48,9 +47,8 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-\t\t\t\t\t\tlabore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-\t\t\t\t\t\tomnis possimus quae.`,
+					content: `Starting your jouyney from the area is recommended if you prefer social and supportive environment to make sure that you have all the needed information and supplies. There you can find a cafe, guidance and equiptment renting. 
+						  You can also buy for example outdoor maps and sleeve badges. The personnel will help you if you have some questions about the national park.`,
 				},
 				{
 					type: 'stats_monthly',
@@ -80,9 +78,9 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-\t\t\t\t\t\tlabore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-\t\t\t\t\t\tomnis possimus quae.`,
+					content: `Haukkalammentie can become congested from time to time. Weekends from May to September are most crowded. 
+						  Parking on the shoulder is strictly prohibited to ensure constant access for emergency vehicles. For visitors arriving by car, the best starting points for excursions are the parking areas of Kattila, Högbacka, and Siikaniemi. 
+						  Haukkalampi can also be reached on foot from the Finnish Nature Centre Haltia, but the hiking trail is challenging.`,
 				},
 				{
 					type: 'html',
@@ -90,9 +88,7 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-\t\t\t\t\t\tlabore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-\t\t\t\t\t\tomnis possimus quae.`,
+					content: `All the circle trails begin in front of the Nature Information Hut Haukanpesä. On the grounds there are dry toilets, a recycling point and tap water available.`,
 				},
 				{
 					type: 'html',
@@ -100,9 +96,8 @@ const content = {
 				},
 				{
 					type: 'text',
-					content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-\t\t\t\t\t\tlabore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-\t\t\t\t\t\tomnis possimus quae.`,
+					content: `Within easy reach from Helsinki you can escape into wild natural settings and enjoy Finnish scenery at its best, with lakes, green forests and rigged crags. 
+					Pack your backpack for a memorable family picnic or campout. The nearby Finnish Nature Centre Haltia spotlights the best of Finland's natural treasures.`,
 				}
 			]
 		},
