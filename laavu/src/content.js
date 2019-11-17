@@ -20,7 +20,7 @@ const content = {
 		},
 		{
 			name: 'Step into the wilderness whenever you feel so.',
-			image: 'http://source.unsplash.com/GquRS1aGMNU',
+			image: 'http://source.unsplash.com/VzwVyjlz2Z4',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
 			path: ''
 		},
@@ -30,7 +30,7 @@ const content = {
 			id: 'haukkalampi',
 			name: 'Haukkalampi',
 			image: 'http://source.unsplash.com/8TJbrQGKFyU',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Haukankierros, Korpinkierros',
 			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
 			content: [
 				{
@@ -117,7 +117,7 @@ const content = {
 			id: 'solvalla',
 			name: 'Solvalla',
 			image: 'https://source.unsplash.com/Pckd-XeAd4U/1600x900',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Trail route',
 			description: `Solvalla Sports Institute stands on the shores of lake Pitkäjärvi next to Nuuksio national park.`,
 			content: [
 				{
@@ -202,7 +202,7 @@ const content = {
 			id: 'veikkola',
 			name: 'Veikkola',
 			image: 'http://source.unsplash.com/SsIaLCKWnfM',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Kaarniaispolku, Trail route',
 			description: `Explore the finnish landscape in miniature size..`,
 			content: [
 				{
@@ -287,7 +287,7 @@ const content = {
 			id: 'kesanki',
 			name: 'Kesänki',
 			image: 'http://source.unsplash.com/RdF3apSExR0',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Trail route, Canoeing',
 			description: `Far away from traffic, total silence and amazing nature around you!`,
 			content: [
 				{
@@ -371,7 +371,7 @@ const content = {
 			id: 'kahvikeidas',
 			name: 'Kahvikeidas',
 			image: 'http://source.unsplash.com/P8PlK2nGwqA',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Trail route',
 			description: `Traditional lean-to shelter to satisfy your appetite`,
 			content: [
 				{
@@ -455,7 +455,7 @@ const content = {
 			id: 'varkaankuru',
 			name: 'Varkaankuru',
 			image: 'http://source.unsplash.com/QdSYuTtcGZE',
-			subtitle: 'Bla bla tags',
+			subtitle: 'Trail route, Stream',
 			description: `Authentic nature trail in the heart of Ylläs`,
 			content: [
 				{
