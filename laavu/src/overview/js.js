@@ -62,7 +62,7 @@ class Overview extends React.Component {
 				<Jumbotron>
 					<h3><b>Welcome to Laavu 👋</b></h3>
 					<p>
-						The #1 social sustainability app for making Finnish forests more accessible, and helping each trailblazer personalize their own kind of experiences in the beauty of Finnish nature.
+						The #1 social sustainability app for making Finnish forests more accessible, and helping each trailblazer personalize their own kind of experiences in the beauty of Finnish nature. Built by wanderers, for wanderers.
 					</p>
 					<p>
 						<a href="#locations">
@@ -83,9 +83,9 @@ class Overview extends React.Component {
 					</Col>
 				</Row>
 				<Jumbotron>
-					<h3><b>Nature experiences and a community of explorers 🏕</b></h3>
+					<h3><b>Enjoy nature with a community of other explorers 🏕</b></h3>
 					<p>
-						Laavu has all you need for unique, social, and sustainable outdoor experiences. Curated routes, personal hiker profile, and a community forum will guarantee your trips to be unforgettable. Built by wanderers, for wanderers.
+						Laavu also includes a hyperlocal messaging feature to make your outdoor experiences more unique, social, and unforgettable. Find people to hike with, share extra supplies with others, and ask for help. In your pocket, 24/7.
 					</p>
 					<p>
 						<Button as={Link} to="/peers" variant='primary'>See more</Button>
