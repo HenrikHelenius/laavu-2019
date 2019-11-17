@@ -86,7 +86,6 @@ class HorisontalSlider extends React.Component {
 					{
 						!noLink &&
 						<Button variant="primary" as={Link} to={`/location:${item.id}`}>Explore</Button>
-						&& <Button variant="primary" onClick={() => this.addToTrip(item)}>Add to Trip</Button>
 					}
 				</Card.Body>
 			</Card>

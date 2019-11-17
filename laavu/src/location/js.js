@@ -31,9 +31,9 @@ class Location extends React.Component {
 			case 'html':
 				return <div dangerouslySetInnerHTML={{ __html: block.content }}></div>;
 			case 'stats_weekly':
-				return <GenericAreaChart content={block.content} title="Visitors by weekday"></GenericAreaChart>;
+				return <GenericAreaChart content={block.content} title="Total visitors by weekday, 2015 >"></GenericAreaChart>;
 			case 'stats_monthly':
-				return <GenericAreaChart content={block.content} title="Visitors by month"></GenericAreaChart>;
+				return <GenericAreaChart content={block.content} title="Total visitors by month, 2015 >"></GenericAreaChart>;
 			default:
 				return null;
 		}
@@ -51,7 +51,6 @@ class Location extends React.Component {
 					</Col>
 					<Col style={{textAlign: 'right'}}>
 						<Button variant="light" style={{marginBottom: '0.5rem'}}>Directions</Button>
-						<Button variant="primary" style={{marginLeft: '1rem'}} onClick={() => {localSto.saveState(constants.ls_trips_id, this.state.item); this.props.history.push('/trips')}}>Add to plans</Button>
 					</Col>
 				</Row>
 				{
