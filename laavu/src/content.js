@@ -1,26 +1,26 @@
 const content = {
 	carousel: [
 		{
-			name: 'Visit X',
-			image: 'https://source.unsplash.com/collection/561941/400x200?xssdf',
+			name: 'Explore Finnish nature in its authenticity.',
+			image: 'http://source.unsplash.com/sp-p7uuT0tw',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
 			path: ''
 		},
 		{
-			name: 'Experience Y',
-			image: 'https://source.unsplash.com/collection/561941/400x200?xsfdf',
+			name: 'Discover places you did not know existed.',
+			image: 'http://source.unsplash.com/ym3vp_TeDLE',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
 			path: ''
 		},
 		{
-			name: 'Explore Z',
-			image: 'https://source.unsplash.com/collection/561941/400x200?sasx',
+			name: 'Collect experiences with like-minded people.',
+			image: 'http://source.unsplash.com/sblp4evk2gs',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
 			path: ''
 		},
 		{
-			name: 'Fall in love with Sleepless Nights',
-			image: 'https://source.unsplash.com/collection/561941/400x200?sasx',
+			name: 'Step into the wilderness whenever you feel so.',
+			image: 'http://source.unsplash.com/GquRS1aGMNU',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at deleniti dolorum ducimus eum facilis fugiat fugit impedit.',
 			path: ''
 		},
