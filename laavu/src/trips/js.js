@@ -137,7 +137,7 @@ class Trips extends React.Component {
 														</div>
 														<div className="right-section">
 															<h6>{post.oneliner}</h6>
-															<p className="vertical-center"><Badge className="mr-2 badge-box-shadow badge-white" variant="light">{post.topic}</Badge><span>{post.distance}M from your position</span></p>
+															<p className="vertical-center"><Badge className="mr-2 badge-box-shadow badge-white" variant="light">{post.topic}</Badge><span>{post.distance}m away</span></p>
 														</div>
 													</div>
 												</Accordion.Toggle>
