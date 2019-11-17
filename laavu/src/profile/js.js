@@ -50,8 +50,8 @@ class Profile extends React.Component {
 				<Jumbotron>
 					<h3><b>Aaro Isosaari</b></h3>
 					<h6>
-						<Badge pill variant="light" className="mr-2 badge-box-shadow">Public profile</Badge>
-						<Badge pill variant="secondary" className="badge-box-shadow">Contributor</Badge>
+						<Badge pill variant="light" style={{lineHeight: '15px'}} className="mr-2 badge-box-shadow">Public profile</Badge>
+						<Badge pill variant="secondary" style={{lineHeight: '15px'}} className="badge-box-shadow">Contributor</Badge>
 					</h6>
 					<div style={{textAlign: "center"}}>
 						<div style={{display: "inline-block"}} className="profile-picture"></div>
