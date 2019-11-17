@@ -29,7 +29,7 @@ const content = {
 		{
 			id: 'haukkalampi',
 			name: 'Haukkalampi',
-			image: 'https://source.unsplash.com/collection/561941/1200x600?aax',
+			image: 'http://source.unsplash.com/8TJbrQGKFyU',
 			subtitle: 'Bla bla tags',
 			description: `Spectacular landscapes created by the Ice Age: valleys and ravines as well as old-growth forests.`,
 			content: [
@@ -201,7 +201,7 @@ const content = {
 		{
 			id: 'veikkola',
 			name: 'Veikkola',
-			image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Veikkola_Kirkkonummi_R-kioski.jpg/250px-Veikkola_Kirkkonummi_R-kioski.jpg',
+			image: 'http://source.unsplash.com/SsIaLCKWnfM',
 			subtitle: 'Bla bla tags',
 			description: `Explore the finnish landscape in miniature size..`,
 			content: [
