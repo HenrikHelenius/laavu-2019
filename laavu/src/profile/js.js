@@ -70,17 +70,17 @@ class Profile extends React.Component {
 				<div className="settings">
 					<Row>
 						<Col>
-							<p>I prefer being <span>{this.state.isSocialToggle ? 'social 👥' : 'in solitude 👤'}</span>.</p>
+							<p>I prefer being <span>{this.state.isSocialToggle ? 'social 👥' : 'in solitude 👤'}</span></p>
 							<Switch onChange={this.handleSocialChange} checked={this.state.isSocialToggle} />
 						</Col>
 						<Col>
-							<p>I prefer <span>{this.state.isTentingToggle ? 'tenting ⛺️' : 'living in cabins 🏠'}</span>.</p>
+							<p>I prefer <span>{this.state.isTentingToggle ? 'tenting ⛺️' : 'living in cabins 🏠'}</span></p>
 							<Switch onChange={this.handleTentingChange} checked={this.state.isTentingToggle} />
 						</Col>
 					</Row>
 				</div>
 				<div className="sustainability">
-					<h6>Our Nature: <Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h6>
+					<h5><Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h5>
 					<ProgressBar
 						onClick={() => this.increaseGreenpoints()}
 						className="green"
