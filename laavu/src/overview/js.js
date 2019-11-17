@@ -10,14 +10,14 @@ class Overview extends React.Component {
 
 	experiencesMarketing = [
 		{
-			name: 'Something unforgettable is just behind the corner',
+			name: 'Something unforgettable is just behind the corner...',
 			image: 'https://source.unsplash.com/nzmPi4d5cvc/500x300',
-			description: `First choose the location for your trip by clicking on Add to .`
+			description: `Explore different locations for your trip, and find the most suitable one by utilizing our valueable insights and data.`
 		},
 		{
-			name: 'You could be kayaking in Finland...',
+			name: 'Imagine yourself kayaking in a beautiful Finnish lake...',
 			image: 'https://source.unsplash.com/ym3vp_TeDLE/500x300',
-			description: `But first ... add your first location and see all available experiences on "My trip" tab.`,
+			description: `...And once here, using Laavu to connect with local people for company, help, and support. Check out the "Peers" tab below!`,
 		}
 	];
 
@@ -59,9 +59,9 @@ class Overview extends React.Component {
 					}
 				</Carousel>
 				<Jumbotron>
-					<h2>Lavuu & it's Peers</h2>
+					<h2>Welcome to Laavu.</h2>
 					<p>
-						The #1 social sustainability app for giving each trailblazer a network to personalize their own kind of experiences in the beauty of Finnish nature.
+						The #1 social sustainability app for making Finnish forests more accessible, and helping each trailblazer personalize their own kind of experiences in the beauty of Finnish nature.
 					</p>
 					<p>
 						<a href="#locations">
@@ -82,9 +82,9 @@ class Overview extends React.Component {
 					</Col>
 				</Row>
 				<Jumbotron>
-					<h2>Lorem Ipusm</h2>
+					<h2>Nature experiences and a community of explorers.</h2>
 					<p>
-						Sustis & safety, social. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi minus nemo numquam omnis repellendus suscipit tempore vero. At culpa earum error nobis nostrum placeat quisquam tempore, unde. Ad, maxime pariatur.
+						Laavu has all you need for unique, social, and sustainable outdoor experiences. Curated routes, personal hiker profile, and a community forum will guarantee your trips to be unforgettable. Built by wanderers, for wanderers.
 					</p>
 					<p>
 						<a href="#top">
