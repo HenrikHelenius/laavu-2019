@@ -80,7 +80,7 @@ class Profile extends React.Component {
 					</Row>
 				</div>
 				<div className="sustainability">
-					<h5>Our Nature: <Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h5>
+					<h6>Our Nature: <Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h6>
 					<ProgressBar
 						onClick={() => this.increaseGreenpoints()}
 						className="green"
