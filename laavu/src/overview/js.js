@@ -51,7 +51,7 @@ class Overview extends React.Component {
 										src={item.image}
 									/>
 									<Carousel.Caption>
-										<h5 className="picture-text-shadow">{item.name}</h5>
+										<h3 className="picture-text-shadow">{item.name}</h3>
 									</Carousel.Caption>
 								</Carousel.Item>
 							)
@@ -77,7 +77,7 @@ class Overview extends React.Component {
 				</Row>
 				<Row className="no-bottom-margin">
 					<Col>
-						<h3 style={{marginBottom: '1rem'}}>Travel & Sustainability</h3>
+						<h4 style={{marginBottom: '1rem'}}>Travel & Sustainability</h4>
 						<HorisontalSlider items={this.experiencesMarketing} noLink={true} noSubtitle={true}></HorisontalSlider>
 					</Col>
 				</Row>
