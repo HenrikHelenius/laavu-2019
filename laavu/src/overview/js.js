@@ -71,13 +71,13 @@ class Overview extends React.Component {
 				</Jumbotron>
 				<Row className="no-bottom-margin" id="locations">
 					<Col>
-						<h3 style={{marginBottom: '1rem'}}>Starting points for your adventure</h3>
+						<h3 style={{marginBottom: '1rem'}}>Your adventure starts here</h3>
 						<HorisontalSlider items={content.locations}></HorisontalSlider>
 					</Col>
 				</Row>
 				<Row className="no-bottom-margin">
 					<Col>
-						<h3 style={{marginBottom: '1rem'}}>Experiences</h3>
+						<h3 style={{marginBottom: '1rem'}}>Travel & Sustainability</h3>
 						<HorisontalSlider items={this.experiencesMarketing} noLink={true} noSubtitle={true}></HorisontalSlider>
 					</Col>
 				</Row>
