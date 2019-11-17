@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss.scss';
+import {Link} from "react-router-dom";
 // Components
 import HorisontalSlider from "../horisontal-slider/js";
 import {Container, Row, Col, Jumbotron, Button, Carousel} from 'react-bootstrap'
@@ -87,9 +88,7 @@ class Overview extends React.Component {
 						Laavu has all you need for unique, social, and sustainable outdoor experiences. Curated routes, personal hiker profile, and a community forum will guarantee your trips to be unforgettable. Built by wanderers, for wanderers.
 					</p>
 					<p>
-						<a href="#top">
-							<Button variant='primary'>Back to the top</Button>
-						</a>
+						<Button as={Link} to="/peers" variant='primary'>See more</Button>
 					</p>
 				</Jumbotron>
 			</Container>

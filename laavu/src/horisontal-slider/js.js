@@ -67,11 +67,30 @@ class HorisontalSlider extends React.Component {
 		localSto.saveState(constants.ls_trips_id, item)
 	}
 
+	loadScore(item) {
+		console.log(item);
+		// The score is calculated based on the amount of visitors on specific weekdays and months.
+		// For example, a Sunday in March gives the "worst" score, 50, since that is the most common time to visit Finnish national parks
+		const dailyvisits = item.content.filter(b => b.type === 'stats_weekly')[0].content.visitors;
+		const monthlyvisits = item.content.filter(b => b.type === 'stats_monthly')[0].content.visitors;
+		const day = new Date().getDay(); // mon-sun, 0-6
+		const month = new Date().getMonth(); // mon-sun, 0-11
+		const dayscore = 0.5 * ((dailyvisits[day] - Math.min(...dailyvisits)) / 7) / ((Math.max(...dailyvisits) - Math.min(...dailyvisits)) / 7);
+		const monthscore = 0.5 * ((monthlyvisits[month] - Math.min(...monthlyvisits)) / 12) / ((Math.max(...monthlyvisits) - Math.min(...monthlyvisits)) / 12);
+		const score = 100 * ((1 - dayscore - monthscore) / 2 + 0.5);
+		return Math.round(score)
+	}
+
 	genericCard(item, idx, noLink, noSubtitle) {
 		return (
-			<Card className='horisontal-scroll-card item' key={idx}
-			      onClick={() => !noLink && this.routeChange(`/location:${item.id}`)}>
+			<Card className='horisontal-scroll-card item' key={idx}>
 				<Card.Img variant="top" src={item.image}/>
+				{
+					!noSubtitle && <div className="statistics-bar">
+						<span className="score">{this.loadScore(item)}</span><span className="rest">/100</span>
+						<div className="text">Laavu-score</div>
+					</div>
+				}
 				<Card.Body>
 					<Card.Title><b>{item.name}</b></Card.Title>
 					{

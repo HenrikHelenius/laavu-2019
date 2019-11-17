@@ -49,3 +49,35 @@
 		cursor: grabbing;
 	}
 }
+
+.statistics-bar {
+	position: absolute;
+	top: 82px;
+	padding-bottom: 25px;
+	padding-left: 1.25rem;
+	padding-right: 50px;
+	text-shadow: 0 0 10px black;
+	background: linear-gradient(15deg, black, transparent 50%);
+
+	.score {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 17px;
+	}
+
+	.rest, .score {
+		color: #11DC3E;
+		color: #C9F129;
+		color: $palette-accent-orange;
+		//color: $palette-accent-yellow;
+	}
+
+	.text {
+		font-style: italic;
+		font-weight: 500;
+		color: #ddd;
+		line-height: 80%;
+		font-size: 15px;
+	}
+}
