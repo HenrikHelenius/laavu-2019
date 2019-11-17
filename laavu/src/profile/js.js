@@ -53,10 +53,6 @@ class Profile extends React.Component {
 						<Badge pill variant="light" className="mr-2 badge-box-shadow">Public profile</Badge>
 						<Badge pill variant="secondary" className="badge-box-shadow">Contributor</Badge>
 					</h6>
-					<p>
-						Public profile info: This is a simple hero unit, a simple jumbotron-style component for calling
-						extra attention to featured content or information.
-					</p>
 					<div style={{textAlign: "center"}}>
 						<div style={{display: "inline-block"}} className="profile-picture"></div>
 						<div className="mb-2 mt-2">
@@ -93,7 +89,7 @@ class Profile extends React.Component {
 						style={{marginTop: "1rem"}}
 					/>
 					<br/>
-					<h6>Sustainable Finland pledge</h6>
+					<h6><b>Sustainable Finland pledge</b></h6>
 					<p>
 						Nature has taken care of us for millions of years and now it’s time for us to take care of it in return. By taking the Sustainable Finland Pledge you make a promise to respect and treasure the Finnish nature, its inhabitants and culture during your visit.
 					</p>
