@@ -51,7 +51,7 @@ class Overview extends React.Component {
 										src={item.image}
 									/>
 									<Carousel.Caption>
-										<h3 className="picture-text-shadow">{item.name}</h3>
+										<h5 className="picture-text-shadow">{item.name}</h5>
 									</Carousel.Caption>
 								</Carousel.Item>
 							)
@@ -59,11 +59,9 @@ class Overview extends React.Component {
 					}
 				</Carousel>
 				<Jumbotron>
-					<h2>Nature · Laavu</h2>
+					<h2>Lavuu & it's Peers</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur doloribus fugit id illum
-						labore libero nihil quasi quidem quo, reprehenderit repudiandae! Aliquam hic molestiae molestias odit
-						omnis possimus quae. TODO
+						The #1 social sustainability app for giving each trailblazer a network to personalize their own kind of experiences in the beauty of Finnish nature.
 					</p>
 					<p>
 						<a href="#locations">

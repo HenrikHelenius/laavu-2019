@@ -119,7 +119,10 @@ class Trips extends React.Component {
 			<Container>
 				<div style={{marginTop: '1rem'}}>
 					<h4 className="header"><span>Peers</span><Button variant="light" className="button-shadow ml-3" onClick={this.openModal}>+ Add</Button></h4>
-					<div className="post-container mt-4">
+					<p className="mt-4 mb-4">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis dicta eos inventore laboriosam mollitia nostrum qui reprehenderit soluta temporibus? Accusamus alias consectetur eos facere inventore ipsam itaque molestias optio.
+					</p>
+					<div className="post-container">
 						<Accordion defaultActiveKey="0">
 							{
 								this.posts.map((post, idx) => {
@@ -148,8 +151,12 @@ class Trips extends React.Component {
 													</Row>
 													<Row>
 														<Col>
-															<Button variant="secondary">Call</Button>
-															<Button variant="light" className="button-shadow" style={{marginLeft: "0.5rem"}}>Message</Button>
+															<a href="tel:+35844900892">
+																<Button variant="secondary">Call</Button>
+															</a>
+															<a href="http://m.me/Lavuu">
+																<Button variant="light" className="button-shadow" style={{marginLeft: "0.5rem"}}>Message</Button>
+															</a>
 														</Col>
 													</Row>
 												</Card.Body>
