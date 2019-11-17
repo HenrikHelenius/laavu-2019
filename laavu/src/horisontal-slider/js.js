@@ -73,7 +73,7 @@ class HorisontalSlider extends React.Component {
 			      onClick={() => !noLink && this.routeChange(`/location:${item.id}`)}>
 				<Card.Img variant="top" src={item.image}/>
 				<Card.Body>
-					<Card.Title>{item.name}</Card.Title>
+					<Card.Title><b>{item.name}</b></Card.Title>
 					{
 						!noSubtitle &&
 						<Card.Subtitle className="mb-2 text-muted">
