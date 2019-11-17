@@ -104,17 +104,21 @@ class Profile extends React.Component {
 						<Row className="mt-4 mb-6">
 							<Col>
 								<span className="vf-badge helsinki"></span>
+								<p style={{marginTop: '0.5rem'}}><b>Helsinki badge</b></p>
 							</Col>
 							<Col>
 								<div className="vf-badge lakeland"></div>
+								<p style={{marginTop: '1rem'}}><b>Lakeland badge</b></p>
 							</Col>
 						</Row>
 						<Row className="mt-4">
 							<Col>
 								<div className="vf-badge lapland locked"></div>
+								<p style={{marginTop: '1rem'}}><b>Lapland badge</b></p>
 							</Col>
 							<Col>
 								<div className="vf-badge archipelago"></div>
+								<p style={{marginTop: '1rem'}}><b>Archipelago badge</b></p>
 							</Col>
 						</Row>
 					</div>
