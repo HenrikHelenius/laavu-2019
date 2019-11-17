@@ -40,13 +40,13 @@ class Overview extends React.Component {
 						<div className="laavu-png"></div>
 					</div>
 				</header>
-				<Carousel style={{height: "205"}} controls={false}>
+				<Carousel style={{height: "255"}} controls={false}>
 					{
 						content.carousel.map((item, idx) => {
 							return (
 								<Carousel.Item key={idx}>
 									<img
-										style={{height: "205", backgroundColor: "whitesmoke"}}
+										style={{height: "255", backgroundColor: "whitesmoke"}}
 										className="d-block w-100"
 										src={item.image}
 									/>
@@ -65,7 +65,7 @@ class Overview extends React.Component {
 					</p>
 					<p>
 						<a href="#locations">
-							<Button variant='primary'>Lorem todo ipsum</Button>
+							<Button variant='primary'>Start exploring</Button>
 						</a>
 					</p>
 				</Jumbotron>
