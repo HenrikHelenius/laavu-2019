@@ -39,6 +39,10 @@ class Location extends React.Component {
 		}
 	}
 
+	getCoordinates(item) {
+		return item.content.filter(b => b.type === 'coordinates')[0]
+	}
+
 	render() {
 		return (
 			<Container className="location-component">
@@ -57,7 +61,9 @@ class Location extends React.Component {
 						<BackButton />
 					</Col>
 					<Col style={{textAlign: 'right'}}>
-						<Button variant="light" style={{marginBottom: '0.5rem'}}>Directions</Button>
+						<a href={`https://www.google.fi/maps/search/${this.getCoordinates(this.state.item).latitude}+${this.getCoordinates(this.state.item).longitude}`} target="_blank">
+							<Button variant="light" style={{marginBottom: '0.5rem'}}>Directions</Button>
+						</a>
 					</Col>
 				</Row>
 			</Container>

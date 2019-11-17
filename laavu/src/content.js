@@ -55,6 +55,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `60°18'32.378"`,
 					longitude: `24°30'48.658"`,
 				},
@@ -142,6 +143,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `60°18'12.692"`,
 					longitude: `24°33'1.408"`,
 				},
@@ -227,6 +229,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `60°16'32.951"`,
 					longitude: `24°27'49.281"`,
 				},
@@ -312,6 +315,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `67°36'13.363"`,
 					longitude: `24°13'13.884"`,
 				},
@@ -396,6 +400,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `67°33'40.616"`,
 					longitude: `24°16'36.985"`,
 				},
@@ -480,6 +485,7 @@ const content = {
 					}
 				},
 				{
+					type: 'coordinates',
 					latitude: `67°35'54.594"`,
 					longitude: `24°12'17.89"`,
 				},

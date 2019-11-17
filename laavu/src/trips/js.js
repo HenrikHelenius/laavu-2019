@@ -151,10 +151,10 @@ class Trips extends React.Component {
 													</Row>
 													<Row>
 														<Col>
-															<a href="tel:+35844900892">
+															<a href="tel:+35844900892" target="_blank">
 																<Button variant="secondary">Call</Button>
 															</a>
-															<a href="http://m.me/Lavuu">
+															<a href="http://m.me/Lavuu" target="_blank">
 																<Button variant="light" className="button-shadow" style={{marginLeft: "0.5rem"}}>Message</Button>
 															</a>
 														</Col>
