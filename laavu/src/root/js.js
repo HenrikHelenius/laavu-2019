@@ -28,7 +28,7 @@ class Root extends React.Component {
 						<Route exact path="/">
 							<Overview/>
 						</Route>
-						<Route path="/trips">
+						<Route path="/peers">
 							<Trips />
 						</Route>
 						<Route path="/profile">
@@ -43,8 +43,8 @@ class Root extends React.Component {
 						className="tab-bottom-navigation"
 					>
 						<Nav.Item>
-							<Nav.Link as={Link} to="/trips" eventKey="trips">
-								My trip
+							<Nav.Link as={Link} to="/peers" eventKey="peers">
+								Peers
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>

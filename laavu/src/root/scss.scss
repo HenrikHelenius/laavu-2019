@@ -38,7 +38,7 @@ $tab-margin: 0.3rem;
 
 .icon-home {
 	@include visit-finland-background();
-	$dimension: 24px;
+	$dimension: 28px;
 	height: $dimension;
 	width: $dimension;
 	-webkit-filter: grayscale(1);
