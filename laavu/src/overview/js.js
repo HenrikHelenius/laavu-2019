@@ -61,7 +61,7 @@ class Overview extends React.Component {
 				<Jumbotron>
 					<h3><b>Welcome to Laavu 👋</b></h3>
 					<p>
-						The #1 social sustainability app for making Finnish forests more accessible, and helping each trailblazer personalize their own kind of experiences in the beauty of Finnish nature. <br><br>Built by wanderers, for wanderers.
+						The #1 social sustainability app for making Finnish forests more accessible, and helping each trailblazer personalize their own kind of experiences in the beauty of Finnish nature. Built by wanderers, for wanderers.
 					</p>
 					<p>
 						<a href="#locations">
