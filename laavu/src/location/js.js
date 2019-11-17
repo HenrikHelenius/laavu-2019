@@ -43,8 +43,15 @@ class Location extends React.Component {
 		return (
 			<Container className="location-component">
 				<div style={{backgroundImage: `url(${this.state.item.image})`}} className="hero">
-					<h2 className="picture-text-shadow">{this.state.item.name}</h2>
+					<h2 className="picture-text-shadow"><b>{this.state.item.name}</b></h2>
 				</div>
+				{
+					this.state.item.content.map(
+						(block, idx) => {
+							return <div key={idx}>{this.evaluateBlock(block)}</div>
+						}
+					)
+				}
 				<Row>
 					<Col>
 						<BackButton />
@@ -53,13 +60,6 @@ class Location extends React.Component {
 						<Button variant="light" style={{marginBottom: '0.5rem'}}>Directions</Button>
 					</Col>
 				</Row>
-				{
-					this.state.item.content.map(
-						(block, idx) => {
-							return <div key={idx}>{this.evaluateBlock(block)}</div>
-						}
-					)
-				}
 			</Container>
 		);
 	}
