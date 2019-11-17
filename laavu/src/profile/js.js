@@ -36,7 +36,7 @@ class Profile extends React.Component {
 	}
 
 	increaseGreenpoints() {
-		this.setState({greenpoints: this.state.greenpoints+1});
+		this.setState({greenpoints: this.state.greenpoints + 1});
 		localSto.saveState(constants.ls_settings_id, this.state)
 	}
 
@@ -71,16 +71,17 @@ class Profile extends React.Component {
 					<Row>
 						<Col>
 							<p>I prefer being <span>{this.state.isSocialToggle ? 'social 👥' : 'in solitude 👤'}</span></p>
-							<Switch onChange={this.handleSocialChange} checked={this.state.isSocialToggle} />
+							<Switch onChange={this.handleSocialChange} checked={this.state.isSocialToggle}/>
 						</Col>
 						<Col>
 							<p>I prefer <span>{this.state.isTentingToggle ? 'tenting ⛺️' : 'living in cabins 🏠'}</span></p>
-							<Switch onChange={this.handleTentingChange} checked={this.state.isTentingToggle} />
+							<Switch onChange={this.handleTentingChange} checked={this.state.isTentingToggle}/>
 						</Col>
 					</Row>
 				</div>
 				<div className="sustainability">
-					<h5><Badge pill variant="light" className="badge-box-shadow" style={{color: "#00711e"}}>Greenpoints</Badge></h5>
+					<h5><Badge pill variant="light" className="badge-box-shadow"
+					           style={{color: "#00711e"}}>Greenpoints</Badge></h5>
 					<ProgressBar
 						onClick={() => this.increaseGreenpoints()}
 						className="green"
@@ -91,7 +92,9 @@ class Profile extends React.Component {
 					<br/>
 					<h6><b>Sustainable Finland pledge 🇫🇮</b></h6>
 					<p>
-						Nature has taken care of us for millions of years and now it’s time for us to take care of it as a return. By taking the Sustainable Finland Pledge, you make a promise to respect and treasure the Finnish nature, its inhabitants, and culture during your visit.
+						Nature has taken care of us for millions of years and now it’s time for us to take care of it as a
+						return. By taking the Sustainable Finland Pledge, you make a promise to respect and treasure the
+						Finnish nature, its inhabitants, and culture during your visit.
 					</p>
 					<a href="https://www.visitfinland.com/sustainable-finland-pledge/" target="_blank">
 						<Button>Pledge now</Button>
@@ -100,7 +103,7 @@ class Profile extends React.Component {
 				<Jumbotron>
 					<div className="badges">
 						<h5><b>Sustainable travelling badges 🎖</b></h5>
-						<ProgressBar now={this.state.badges} label={`${this.state.badges}%`} />
+						<ProgressBar now={this.state.badges} label={`${this.state.badges}%`}/>
 						<Row className="mt-4 mb-6">
 							<Col>
 								<span className="vf-badge helsinki"></span>
@@ -114,7 +117,12 @@ class Profile extends React.Component {
 						<Row className="mt-4">
 							<Col>
 								<div className="vf-badge lapland locked"></div>
-								<p style={{marginTop: '1rem'}}><b>Lapland badge</b></p>
+								<p style={{marginTop: '1rem'}}>
+									<b>
+										Lapland badge <br/>
+										(Locked)
+									</b>
+								</p>
 							</Col>
 							<Col>
 								<div className="vf-badge archipelago"></div>
