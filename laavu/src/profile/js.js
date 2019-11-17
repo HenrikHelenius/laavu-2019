@@ -48,7 +48,7 @@ class Profile extends React.Component {
 		return (
 			<Container>
 				<Jumbotron>
-					<h3>Aaro Isosaari</h3>
+					<h3><b>Aaro Isosaari</b></h3>
 					<h6>
 						<Badge pill variant="light" className="mr-2 badge-box-shadow">Public profile</Badge>
 						<Badge pill variant="secondary" className="badge-box-shadow">Contributor</Badge>
@@ -99,7 +99,7 @@ class Profile extends React.Component {
 				</div>
 				<Jumbotron>
 					<div className="badges">
-						<h5>Sustainable travelling badges:</h5>
+						<h5><b>Sustainable travelling badges</b></h5>
 						<ProgressBar now={this.state.badges} label={`${this.state.badges}%`} />
 						<Row className="mt-4 mb-6">
 							<Col>
