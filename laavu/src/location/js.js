@@ -31,9 +31,9 @@ class Location extends React.Component {
 			case 'html':
 				return <div dangerouslySetInnerHTML={{ __html: block.content }}></div>;
 			case 'stats_weekly':
-				return <GenericAreaChart content={block.content} title="Total visitors by weekday, 2015 >"></GenericAreaChart>;
+				return <GenericAreaChart content={block.content} title="Total visitors by weekday, 2015 →"></GenericAreaChart>;
 			case 'stats_monthly':
-				return <GenericAreaChart content={block.content} title="Total visitors by month, 2015 >"></GenericAreaChart>;
+				return <GenericAreaChart content={block.content} title="Total visitors by month, 2015 →"></GenericAreaChart>;
 			default:
 				return null;
 		}
