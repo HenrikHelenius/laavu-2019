@@ -118,7 +118,7 @@ class Trips extends React.Component {
 		return (
 			<Container>
 				<div style={{marginTop: '1rem'}}>
-					<h3 className="header"><span><b>Peers</b></span><Button variant="light" className="button-shadow ml-3" onClick={this.openModal}>+ Add</Button></h3>
+					<h2 className="header"><b><span>Peers</span></b><Button variant="light" className="button-shadow ml-3" onClick={this.openModal}>+ Add</Button></h2>
 					<p className="mt-4 mb-4">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis dicta eos inventore laboriosam mollitia nostrum qui reprehenderit soluta temporibus? Accusamus alias consectetur eos facere inventore ipsam itaque molestias optio.
 					</p>
@@ -137,7 +137,7 @@ class Trips extends React.Component {
 														</div>
 														<div className="right-section">
 															<h6><b>{post.oneliner}</b></h6>
-															<p className="vertical-center"><Badge className="mr-2 badge-box-shadow badge-white" variant="light">{post.topic}</Badge><span><b>{post.distance}m</b> away</span></p>
+															<p className="vertical-center"><Badge className="mr-2 badge-box-shadow badge-white" variant="light">{post.topic}</Badge><span><i>{post.distance}m away</i></span></p>
 														</div>
 													</div>
 												</Accordion.Toggle>
