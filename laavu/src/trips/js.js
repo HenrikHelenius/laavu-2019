@@ -98,18 +98,20 @@ class Trips extends React.Component {
 		const topic = event.target.elements.type.value;
 		const message = event.target.elements.message.value;
 		const oneliner = event.target.elements.oneliner.value;
-		const post = {
-			name: 'Aaro',
-			picture: 'https://source.unsplash.com/Kt8eGw8_S8Y',
-			distance: '0',
-			oneliner: oneliner,
-			message: message,
-			topic: topic
-		};
-		this.posts = [post, ...this.posts];
-		this.posts = this.returnOnlyUniquePosts(this.posts);
+		if (oneliner.length) {
+			const post = {
+				name: 'Aaro',
+				picture: 'https://source.unsplash.com/Kt8eGw8_S8Y',
+				distance: '0',
+				oneliner: oneliner,
+				message: message,
+				topic: topic
+			};
+			this.posts = [post, ...this.posts];
+			this.posts = this.returnOnlyUniquePosts(this.posts);
 
-		localSto.saveState(constants.ls_posts_id, [...this.posts]);
+			localSto.saveState(constants.ls_posts_id, [...this.posts]);
+		}
 		this.closeModal()
 	};
 
@@ -152,7 +154,7 @@ class Trips extends React.Component {
 													<Row>
 														<Col>
 															<a href="tel:+35844900892" target="_blank">
-																<Button variant="secondary">Call</Button>
+																<Button variant="primary">Call {post.name}</Button>
 															</a>
 															<a href="http://m.me/Lavuu" target="_blank">
 																<Button variant="light" className="button-shadow" style={{marginLeft: "0.5rem"}}>Message</Button>
