@@ -118,9 +118,9 @@ class Trips extends React.Component {
 		return (
 			<Container>
 				<div style={{marginTop: '1rem'}}>
-					<h2 className="header"><span>Peers</span><Button variant="light" className="button-shadow ml-3" onClick={this.openModal}>+ Add</Button></h2>
+					<h2 className="header"><b><span>Peers 👫 </span></b><Button variant="light" className="button-shadow ml-3" onClick={this.openModal}>+ Add</Button></h2>
 					<p className="mt-4 mb-4">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis dicta eos inventore laboriosam mollitia nostrum qui reprehenderit soluta temporibus? Accusamus alias consectetur eos facere inventore ipsam itaque molestias optio.
+						Looking for someone to go hike with? Have extra supplies to share with others? Need help with anything? Use this forum forum to connect with other like-minded explorers - hyperlocally.
 					</p>
 					<div className="post-container">
 						<Accordion defaultActiveKey="0">
